@@ -262,9 +262,15 @@ figure.service {
 } 
 // END VIDEO WRAPPER
 
-// CONTACT SECTION
+
+/*==========  CONTACT SECTION  ==========*/
+
 .contact-cta {
   position: relative;
+
+  > div {
+    position: relative;
+  }
 
   @media (max-width:$screen-sm) {
     margin-top: 1.5em;  
