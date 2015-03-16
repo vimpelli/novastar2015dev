@@ -1,0 +1,282 @@
+/* STYLESHEET FOR HEADER AND NAV
+---------------------------------------- */
+$nav-height: 4.5em;
+$nav-padding: $nav-height / 8;
+
+$dark: true;
+
+$nav-background:$gray-lighter; 
+@if $dark {
+
+$nav-background:$gray-darker; 
+
+}
+
+
+
+header.navbar {	
+	z-index:1000;
+	width:100%;
+	padding:$nav-padding 0;
+	position: relative;
+	background:$nav-background;
+	color:$gray;
+	text-align: center;
+	height:$nav-height + ($nav-padding * 2);
+	margin-bottom: 5em;
+
+	@if $dark {
+		background:$gray-darker;
+		color:$gray-lighter !important; 
+	}
+
+	a {
+		@if $dark {
+			color:$gray-lighter !important; 
+		}
+		text-decoration: none;
+	}
+}
+
+// WIDGET AREA TO THE LEFT OF THE LOGO
+.header_flex_child {
+	position: relative;
+	display:inline-block;
+	width:(100% / 3);
+	float:left;
+	// height:$nav-height;
+}
+
+.header-left {
+	div {
+		margin:auto;
+	}
+
+	p {
+		line-height: $nav-height;
+		vertical-align: middle;
+		margin:0;
+	}
+}
+
+// THE LOGO CONTAINER AND LOGO
+.logo-container {
+	img {
+		width:260px;
+		position: relative;
+		z-index: 100;
+		transition: 0.3s transform;
+
+		&:hover {
+			transition: 0.3s transform;
+			transform: scale(1.05);
+		}
+	}
+}
+
+
+$menu-color:$primary;
+
+// MAIN NAV CONTAINER
+.main-nav {
+
+	// MAIN NAV UL
+	ul.nav {
+		position: relative;
+		margin:0;
+		padding:0;
+
+		// MAIN NAV ITEMS
+		> li {
+			width:24%;
+			padding:0 5px;
+			position: relative;
+			display: inline-block;
+			box-sizing:border-box;
+			line-height: $nav-height;
+
+			a {	
+				width:100%;
+				flex:1;
+				// line-height: $nav-height - 7px;
+				text-transform: uppercase;
+				color:$secondcolor;
+				white-space: nowrap;
+
+				&::before, &::after {
+					font-size:1.2em;
+					display: inline-block;
+					opacity: 0;
+					transition: transform 0.3s, opacity 0.2s;
+				}
+				&::before {
+					margin-right: 10px;
+					content: '[';
+					transform: translateX(20px);
+				}
+				&::after {
+					margin-left: 10px;
+					content: ']';
+					transform: translateX(-20px);
+				}
+				&:hover {
+					&::before, &::after {
+						opacity: 1;
+						transform: translateX(0px);
+					}
+				}
+				&:focus {
+					&::before, &::after {
+						opacity: 1;
+						transform: translateX(0px);
+					}
+				}
+			}
+		}
+
+		li.active > a {
+			&::before {
+				opacity: 1;
+				margin-right: 10px;
+				content: '[';
+				transform: translateX(0px);
+			}
+			&::after {
+				opacity: 1;
+				margin-left: 10px;
+				content: ']';
+				transform: translateX(0px);
+			}
+		}
+
+		// DROPDOWN MENU CONTAINER
+		ul.dropdown-menu {
+			padding:0;
+			border-bottom: 5px solid $menu-color;
+			background:$nav-background;
+			top:$nav-height;
+			font-size: 1em;
+			transition: 0.3s all !important; 
+
+			// DROPDOWN MENU ITEMS
+			a {
+				min-width: 200px;
+				margin:0;
+				// font-weight: 300;
+				text-align: left;
+				line-height: 20px;
+				padding:10px 15px;
+				display:block;
+			}
+		}
+	}
+}
+
+.dropdown-menu > .active > a {
+	&, &:hover, &:focus {
+		color: $dropdown-link-active-color;
+		text-decoration: none;
+		outline: 0;
+		background-color:transparent;
+	}
+}
+
+/* HEADER MEDIA QUERIES
+---------------------------------------- */
+@media (max-width:$screen-lg) { 
+
+header.navbar {
+	background:$nav-background;
+	display:block;
+	height:auto;
+	padding: 0;
+}
+
+.logo-container {
+	padding: 3em 0;
+}
+
+.header_flex_child {
+	width:100%;
+	float:none;
+}
+
+.main-nav {
+	border-top: 5px solid $primary;
+	display:block;
+	height:auto;
+	background:$nav-background;
+	width:100%;
+
+	a { 
+		padding:0 0.8em;
+		white-space: nowrap;
+	}
+	// MAIN NAV UL FOR MOBILE
+	ul.nav {
+
+		li {
+			width:180px;
+		}
+
+		ul.dropdown-menu {
+			left:0;
+			width:100% !important;
+			min-width:150px;
+			border:none;
+			border-bottom:5px solid $secondcolor;
+
+			a {
+				line-height: $nav-height * 0.7;
+				min-width:0;
+				padding:0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+}
+
+@media (max-width:$screen-sm) { 
+
+	.main-nav {
+		display:block;
+		height:auto;
+		background:$nav-background;
+		width:100%;
+
+		a { 
+			white-space: nowrap;
+		}
+
+		// MAIN NAV UL FOR MOBILE
+		ul.nav {
+			display: block;
+			
+			li,a {
+				width:100%;
+				display: block;
+			}
+
+			li:nth-child(2n+0) {
+				background:$nav-background - 30;
+			}
+		}
+	}
+
+}
+
+// @media (max-width:800px) { 
+
+// .logo-container {
+// 	padding-bottom: 30px;
+	
+// 	img {
+// 		margin:auto;
+// 		position: relative;
+// 		z-index: 1;
+// 	}
+// }
+
+// }
