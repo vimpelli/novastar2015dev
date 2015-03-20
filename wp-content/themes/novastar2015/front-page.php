@@ -28,7 +28,7 @@
 							<li>CISCO</li>
 							<li>SGI / Nimble</li>
 							<li>CubePro 3D Printers </li>
-						<a href="<?php echo home_url(); ?>/calibration"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
+						<a href="<?php echo home_url(); ?>/new-hardware"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
 						</ul>
 					</figcaption>
 				</figure>
@@ -41,7 +41,7 @@
 							<li>Dassault CATIA/Simulia</li>
 							<li>Siemens NX CAD/CAE</li>
 							<li>Microsoft</li>
-						<a href="<?php echo home_url(); ?>/calibration"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
+						<a href="<?php echo home_url(); ?>/software"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
 						</ul>
 					</figcaption>
 				</figure>
@@ -55,7 +55,7 @@
 						<ul class="box-info">
 							<li>Asset Management tracking</li>
 							<li>Imaging, Installs, Repairs, Removals</li>
-						<a href="<?php echo home_url(); ?>/calibration"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
+						<a href="<?php echo home_url(); ?>/it-services"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
 						</ul>
 					</figcaption>
 				</figure>
@@ -66,7 +66,7 @@
 						<h2>ReMarketing</h2>
 						<ul class="box-info">
 							<p>Recover  Value of  used IT Assets</p>
-						<a href="<?php echo home_url(); ?>/calibration"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
+						<a href="<?php echo home_url(); ?>/re-marketing"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
 						</ul>
 					</figcaption>
 				</figure>
@@ -77,7 +77,7 @@
 						<h2>USED IT HARDWARE</h2>
 						<ul class="box-info">
 							<p>Play It Again PCs</p>
-						<a href="<?php echo home_url(); ?>/calibration"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
+						<a href="<?php echo home_url(); ?>/used-sales"><button type="button" class="btn btn-block btn-primary">Learn More</button></a>
 						</ul>
 					</figcaption>
 				</figure>

@@ -1,21 +1,7 @@
-<?php while (have_posts()) : the_post(); ?>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="header-hero">
-					<img class="img img-responsive" src="<?php uploads_dir(); ?>calibration.jpg">
-					<?php get_template_part('templates/page', 'header'); ?>
-				</div>
-			</div>
-		</div>
-	</div>
+<?php get_template_part('templates/page', 'headerhero'); ?>
 <div class="container wrapper calibration">
-	<div class="row section">
+	<div class="row section divider">
 		<div class="col-sm-12">
-			<?php the_breadcrumb(); ?>
-
-			<!-- <?php get_template_part('templates/content', 'page'); ?> -->
-
 			<h2>Your Partner in Metrology Services</h2>
 			<div class="col-sm-4">
 				<ul>
@@ -47,7 +33,7 @@
 		</div>
 	</div>
 	
-	<div class="row section">
+	<div class="row section divider">
 		<div class="col-sm-12 col-md-6 info">
 			<h2>A2LA Accredited Calibration Services</h2>
 			<p class="lead">Our Scope of Accreditation to ISO/IEC 17025:2005 and ANSI/NCSL Z540-1-1994 standards provide you the confidence that we deliver exceptional calibration services.</p>
@@ -58,7 +44,7 @@
 		</div>
 	</div>
 
-	<div class="row section">
+	<div class="row section divider">
 		<div class="col-sm-12">
 			<h2>Customer Portal Services</h2>
 			<p class="lead">Our customer portal allows you access to your calibration information from your facility or other remote locations.</p><p> With a balance of multi-layer security and read-only capability to core calibration data and user-by-user defined access to features like customer shipper creation and current asset status, our web system allows you to utilize our asset management services to their fullest. Cross platform and cross browser compatable, with support for a wide variety of mobile devices. You access your data wherever and whenever you need it most.</p>
@@ -103,5 +89,3 @@
 	</div>
 
 </div>
-
-<?php endwhile; ?>

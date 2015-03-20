@@ -1,3 +1,16 @@
+<?php if (is_page() && !is_front_page()): ?>
+<div class="container-fluid">
+	<div class="row footer-menu">
+		<div class="container">
+			<div class="row">
+				<?php dynamic_sidebar('footer' ); ?>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<?php endif; ?>
+
 <div class="wrapper space-top pre-footer">
 	<div class="container">
 		<div class="row">

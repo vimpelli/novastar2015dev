@@ -45,6 +45,7 @@
     left:75%; 
     }
     background-image:url(#{$theme-img-root}pattern.png);
+    background-image:url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png);
   }
 
   @media (max-width:$screen-lg) {
@@ -95,7 +96,7 @@ $margin: 2em; // DEFINES THE SPACE BETWEEN THE BLOCKS, AND THE SIZE OF THE BLOCK
 	}
 }
 
-@media (min-width:$screen-md) {
+@media (min-width:$screen-md ) {
 
   $height: 51em;
 

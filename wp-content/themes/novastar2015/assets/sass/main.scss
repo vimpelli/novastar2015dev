@@ -14,5 +14,11 @@
 @import "layouts/_pages";            // Page styling
 @import "layouts/_posts";            // Post styling
 
-@import "layouts/pages/_home";       // Home page styling
-@import "layouts/pages/_calibration";// Calibration page styling
+@import "layouts/pages/_page";       	// General page styling
+@import "layouts/pages/_home";       	// Home page styling
+@import "layouts/pages/_calibration";	// Calibration page styling
+@import "layouts/pages/_newhardware";	// New Hardware page styling
+@import "layouts/pages/_itservices";	// IT Services page styling
+@import "layouts/pages/_software";	    // Software page styling
+@import "layouts/pages/_remarketing";	// Re-Marketing page styling
+@import "layouts/pages/_usedsales";	    // Used Sales page styling

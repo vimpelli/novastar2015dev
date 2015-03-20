@@ -1,0 +1,48 @@
+/*==========  REMARKETING PAGE  ==========*/
+.remarketing {
+  .logo {
+    @media (max-width:$screen-sm) {
+      margin-top: 2em;
+    }
+  }
+
+  .testimonial {
+    position: relative;
+    overflow: hidden;
+    padding:2em;
+    margin-top: 2em;
+    background:$primary +40;
+    border-bottom:1em solid $secondcolor;
+
+    &:nth-child(2n+1) {
+      background:$primary +80; 
+      &:before {
+        position: absolute;
+        top:-5rem;
+        left:-2rem;
+        font-family: FontAwesome;
+        font-size: 10em;
+        content:"\f10d";
+        transform: rotate(20deg);
+        opacity: 0.2;
+      }
+    }
+    &:nth-child(2n+0) {
+      &:before {
+        position: absolute;
+        bottom:-5rem;
+        right:-2rem;
+        font-family: FontAwesome;
+        font-size: 10em;
+        content:"\f10e";
+        transform: rotate(20deg);
+        opacity: 0.2;
+      }
+    }
+
+    h4 {
+      font-family: Lato;
+      font-weight: 400;
+    }
+  }
+}

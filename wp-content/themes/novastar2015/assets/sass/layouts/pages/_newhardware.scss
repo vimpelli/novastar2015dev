@@ -1,0 +1,63 @@
+/*==========  NEW HARDWARE PAGE  ==========*/
+$product-height:30em;
+
+.new-hardware {
+
+	.products-listing {
+		> li {
+			display: block;
+		}
+	}
+	
+	article {
+
+		margin-bottom: 2em;
+		border-radius: 1em;
+		border-bottom: 1em solid $primary;
+
+		@media (max-width:$screen-lg) {
+			// height:$product-height;
+		}
+		@media (max-width:$screen-md) {
+			// height:$product-height;
+		}
+		@media (min-width:$screen-sm) {
+			height:$product-height;
+		}
+
+		background:$gray-lighter;
+		padding:2em;
+
+		img {
+			max-height:150px;
+			margin:0 auto 1em auto;
+		}
+
+		.product-title { 
+			font-size: 1.2em;
+			position: relative;
+			background: $gray-darker;
+			padding:0.2em 0.4em; 
+			color:white;
+			overflow: hidden;
+
+			&:before {
+				content:'';
+				height:1em;
+				width:3em;
+				background:$gray-lighter;
+				position: absolute;
+				top:-0.2em;
+				right:-1.5em;
+				transform:rotate(45deg);
+			}
+		}
+
+		.product-description {
+		}
+
+		button {
+			margin:2em 0;
+		}
+	}
+}

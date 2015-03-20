@@ -10,7 +10,7 @@
   <?php do_action('get_header');
     get_template_part('templates/header');
   ?>
-
+  
   <div class="wrap" role="document">
     <main class="content" role="main">
       <?php include roots_template_path(); ?>

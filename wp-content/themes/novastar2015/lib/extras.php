@@ -88,7 +88,7 @@ function the_breadcrumb() {
                 $anc = get_post_ancestors( $post->ID );
                 $title = get_the_title();
                 foreach ( $anc as $ancestor ) {
-                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li>';
+                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a> /</li>';
                 }
                 echo $output;
                 echo '<strong title="'.$title.'"> '.$title.'</strong>';
@@ -111,3 +111,27 @@ function register_my_menu() {
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+/*==========  Include to show date theme file was modified  ==========*/
+
+function date_modified() {
+
+    echo '<div class="mod-time">';
+
+    $path = realpath(__FILE__);
+
+    date_default_timezone_set('America/New_York');
+
+    $time = date ( 'l F d, Y @ h:ia' , filemtime($path));
+    
+    echo "<p>This page was last updated on: </p><span>" . $time ."</span></div>";
+
+}
+
+
+
+
+
+
+
+
