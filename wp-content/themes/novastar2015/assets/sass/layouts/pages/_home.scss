@@ -1,3 +1,4 @@
+/*==========  TRIANGLES ON HOME PAGE  ==========*/
 
 .triangle {
   position: absolute;
@@ -10,7 +11,7 @@
   transform: matrix(1,0.3,-1,0.3,-100,100);
 
   &.one {
-    background: $gray-lighter;
+    background: $nav-background;
 
      @media (max-width:$screen-lg) {
       background:$nav-background;
@@ -20,10 +21,6 @@
     @media (max-width:$screen-sm) {
       background:$nav-background - 30;
       z-index:-1;
-    }
-
-    @if $dark {
-      background: $gray-darker; 
     }
   }
 
@@ -55,142 +52,310 @@
   }
 }
 
-$margin: 2em; // DEFINES THE SPACE BETWEEN THE BLOCKS, AND THE SIZE OF THE BLOCKS
-
 .home-tagline {
+  width:75%;
+  padding-bottom: 1em;
   margin-bottom: 1em;
-
-  small {
-    font-size: 2.2rem;
-    i {
-      vertical-align: -0.1em;
-      font-size: 1.2em;
-      margin:0 0.5rem;
-    }
-  }
 }
 
-.container {
-  background-size:100%;
-  background-repeat:no-repeat;
-  background-position:center center;
-}
+/*==========  HOME REV 1  ==========*/
+
+// $margin: 2em; // DEFINES THE SPACE BETWEEN THE BLOCKS, AND THE SIZE OF THE BLOCKS
+
+
+// .container {
+//   background-size:100%;
+//   background-repeat:no-repeat;
+//   background-position:center center;
+// }
+
+// .home-hero {
+//   padding-top: 2em;
+//   position: relative;
+
+// 	.col {
+// 		position: relative;
+
+// 		.block {
+//       border-radius:1rem;
+// 			// overflow: hidden;
+// 			position: relative;
+// 			background-position:center center !important;
+//       background-size:cover !important;
+// 			background: $primary;
+// 			margin-bottom: $margin;
+// 			color:$gray-lighter;
+// 		}
+// 	}
+// }
+
+// @media (min-width:$screen-md ) {
+
+//   $height: 51em;
+
+// 	.col-1 {
+// 		.block {
+// 			height: $height;
+// 		}
+//     .zoom {
+//       line-height: ($height - $margin * 2);
+//     }
+// 	}
+// 	.col-2 {
+// 		.block {
+// 			height: (($height - $margin) / 2);
+// 		}
+//     .zoom {
+//       line-height: (($height - $margin * 4) / 2);
+//     }
+// 	}
+// 	.col-3 {
+// 		.block {
+// 			height: (($height - $margin * 2) / 3);
+// 		}
+//     .zoom {
+//       line-height: (($height - $margin * 6) / 3);
+//     }
+// 	}
+// }
+
+
+// figure.service {
+//   position: relative;
+//   color:black;
+//   width: 100%;
+//   height:100%;
+//   border-radius:1rem;
+//   background:rgba(169, 182, 203, 0.4);
+
+//   figcaption {
+
+//     @media (min-width:$screen-md + 1) {
+//       position: absolute;
+//       top:50%; 
+//       transform: translateY(-50%);
+//     }
+
+//     left:0;
+//     width: 100%;
+//     padding:2em;
+//   }
+
+//   h2 {
+//     color:$gray-lighter;
+//     background:$secondcolor;
+//     padding:0.8em;
+//     font-size: 1.8em;
+//     font-weight: 700;
+//     font-family: Lato;
+//   	text-transform: uppercase;
+//     transition: transform 0.35s;
+//     margin:0;
+//     border-radius:1rem 1rem 0 0;
+//   }
+
+//   .box-info {
+//     margin:0;
+//     z-index: 500;
+//     padding:1em;
+//     font-size: 1.1em;
+//     transition: transform 0.35s;
+//     background:rgba(255, 255, 255,0.8);
+//     border-radius:0 0 1rem 1rem;
+
+
+//     li {
+//       margin-left: 1em;
+//       @include mylist($secondcolor)
+//     }
+
+//     a {
+//       &:hover {
+//        text-decoration: none;
+//       }
+//     }
+//   }
+
+//   button {
+//     margin-top: 1em;
+//   }
+// }
+
+
+
+/*==========  HOME REV 2  ==========*/
+
+$height: 25em;
 
 .home-hero {
-  padding-top: 2em;
-  position: relative;
 
-	.col {
-		position: relative;
-
-		.block {
-      border-radius:1rem;
-			// overflow: hidden;
-			position: relative;
-			background-position:center center !important;
-      background-size:cover !important;
-			background: $primary;
-			margin-bottom: $margin;
-			color:$gray-lighter;
-		}
-	}
-}
-
-@media (min-width:$screen-md ) {
-
-  $height: 51em;
-
-	.col-1 {
-		.block {
-			height: $height;
-		}
-    .zoom {
-      line-height: ($height - $margin * 2);
-    }
-	}
-	.col-2 {
-		.block {
-			height: (($height - $margin) / 2);
-		}
-    .zoom {
-      line-height: (($height - $margin * 4) / 2);
-    }
-	}
-	.col-3 {
-		.block {
-			height: (($height - $margin * 2) / 3);
-		}
-    .zoom {
-      line-height: (($height - $margin * 6) / 3);
-    }
-	}
-}
-
-
-figure.service {
-  position: relative;
-  color:black;
-  width: 100%;
-  height:100%;
-  border-radius:1rem;
-  background:rgba(169, 182, 203, 0.4);
-
-  figcaption {
-
-    @media (min-width:$screen-md + 1) {
-      position: absolute;
-      top:50%; 
-      transform: translateY(-50%);
-    }
-
-    left:0;
-    width: 100%;
-    padding:2em;
-  }
-
-  h2 {
-    color:$gray-lighter;
-    background:$secondcolor;
-    padding:0.8em;
-    font-size: 1.8em;
-    font-weight: 700;
-    font-family: Lato;
-  	text-transform: uppercase;
-    transition: transform 0.35s;
-    margin:0;
-    border-radius:1rem 1rem 0 0;
-  }
-
-  .box-info {
-    margin:0;
-    z-index: 500;
+  .block {
+    border-radius:1em;
+    position: relative;
     padding:1em;
-    font-size: 1.1em;
-    transition: transform 0.35s;
-    background:rgba(255, 255, 255,0.8);
-    border-radius:0 0 1rem 1rem;
+    overflow: hidden;
+    margin-top: 2em;
+    background:$gray-lighter;
+    background-image: url(#{$theme-img-root}grid.png);
+    border-top:0.4em solid $primary;
+    border-bottom:0.8em solid $primary - 30;
 
-
-    li {
-      margin-left: 1em;
-      @include mylist($secondcolor)
+    @media (max-width:$screen-lg) and (min-width:$screen-md){
+      height:$height;
+    }
+     @media (max-width:$screen-md) and (min-width:$screen-sm) {
+      height:$height * 0.95;
     }
 
-    a {
-      &:hover {
-       text-decoration: none;
+    &:before {
+      z-index: 100;
+      transition: 0.3s all;
+      content:'';
+      background:$primary;
+      height:100px;
+      width:100px;
+      position: absolute;
+      top:-15%;
+      left:50%;
+      transform: matrix(1,0.3,-1,0.3,-50,-50);
+    }
+
+    &:after {
+      z-index: 100;
+      transition: 0.3s all;
+      content:'';
+      background:$primary - 30;
+      height:100px;
+      width:100px;
+      position: absolute;
+      bottom:-15%;
+      left:50%;
+      transform: matrix(1,0.3,-1,0.3,-50,50);
+    }
+
+    div.img-wrapper {
+      max-height: $height/2;
+      overflow: hidden;
+    }
+
+    img {
+      filter:grayscale(80%);
+      transition: 0.5s all;
+    }
+
+    &:hover {
+
+      &:before {
+        // transition: 0.3s all;
+        // top:0;
+      }
+      &:after {
+        transition: 0.3s all;
+        bottom:0;
+      }
+      img {
+        margin-top: -0.5em;
+        transition: 0.5s all;
+        filter:grayscale(0%);
       }
     }
   }
 
-  button {
-    margin-top: 1em;
+  a {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+  figcaption {
+    padding: 0 1em 1em 1em;
+
+    h2 {
+      padding-bottom: 0.3rem;
+      padding-left:1rem;
+      margin-left:-1rem;
+      color:$secondcolor;
+      border-bottom: 1px solid $gray-light;
+
+      &:before {
+        content:'';
+        margin-right: 0.5rem;
+        padding-bottom: 1rem;
+        border-left: 1px solid $gray-light;
+      }
+
+      &:after {
+        // content: ' –';
+      }
+    }
+
+    p {
+      padding-left: 0.4em;
+      font-weight: 300;
+      font-size: 1.2em;
+    }
   }
 }
+
+/*==========  NEWS HERO SECTION  ==========*/
+
+.news-hero {
+  padding:2em 1em;
+  position: relative;
+  z-index: 90;
+  // margin-top:4em;
+  border-left: 5px solid $primary;
+  border-right: 5px solid $primary;
+  background:$primary + 80;
+
+  .news-title {
+    position: absolute;
+    top:0;
+    left:0;
+    background:$secondcolor;
+    color:white;
+    padding:0.2em 1em;
+    text-transform: uppercase;
+  }
+
+  .news-more {
+    margin:0;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background:$primary;
+    color:white;
+    padding:0.2em 1em;
+    text-transform: uppercase;
+    transition: 0.2s all;
+
+    &:hover {
+      transition: 0.2s all;
+      border-bottom:0.5em solid $green;
+    }
+  }
+
+  .news-image {
+    img {
+      display: block;
+      height:auto;
+      margin:0 auto;
+    }
+  }
+
+  .large-image {
+    width:100%;
+  }
+}
+
+
+
 /*==========  LOGOS  ==========*/
 
 .logo-row {
-  padding-top:$wrapper-spacing/2;
+  padding:$wrapper-spacing/1.5 0;
   position: relative;
 
   .logo {
@@ -202,7 +367,10 @@ figure.service {
       left:50%;
       transform:translate(-50%, -50%);
       max-width: 150px;
-      // margin:0 auto;
+
+      @media (max-width:$screen-xs) {
+        padding:1rem;
+      }
     }
   }
 }
@@ -243,6 +411,10 @@ figure.service {
       margin:0 auto 1em auto;
       text-align: center;
     }
+  }
+
+  p.lead {
+    line-height: 1.2em;
   }
 
   button {

@@ -6,31 +6,25 @@ $nav-padding: $nav-height / 8;
 $dark: true;
 
 $nav-background:$gray-lighter; 
+
 @if $dark {
-
-$nav-background:$gray-darker; 
-
+	// $nav-background:$gray-darker;
+	$nav-background:$secondcolor;
 }
-
-
 
 header.navbar {	
 	z-index:1000;
 	width:100%;
 	padding:$nav-padding 0;
+	padding-bottom: $nav-padding + 0.45em;
 	position: relative;
 	background:$nav-background;
-	color:$gray;
 	text-align: center;
-	height:$nav-height + ($nav-padding * 2);
+	height:$nav-height + ($nav-padding * 2) + 0.45em;
 	margin-bottom: 5em;
+	border-bottom: $nav-height/10 solid $primary;
 
-	@if $dark {
-		background:$gray-darker;
-		color:$gray-lighter !important; 
-	}
-
-	a {
+	a, .header-left p {
 		@if $dark {
 			color:$gray-lighter !important; 
 		}
@@ -44,7 +38,6 @@ header.navbar {
 	display:inline-block;
 	width:(100% / 3);
 	float:left;
-	// height:$nav-height;
 }
 
 .header-left {

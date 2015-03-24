@@ -127,11 +127,3 @@ function date_modified() {
     echo "<p>This page was last updated on: </p><span>" . $time ."</span></div>";
 
 }
-
-
-
-
-
-
-
-

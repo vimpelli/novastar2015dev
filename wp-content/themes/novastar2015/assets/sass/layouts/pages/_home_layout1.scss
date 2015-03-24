@@ -1,0 +1,357 @@
+
+.triangle {
+  position: absolute;
+  margin:auto;
+  z-index:1;
+  bottom:0;
+  left:50%;
+  width:200px;
+  height:200px;
+  transform: matrix(1,0.3,-1,0.3,-100,100);
+
+  &.one {
+    background: $nav-background;
+
+     @media (max-width:$screen-lg) {
+      background:$nav-background;
+      z-index:-1;
+    }
+
+    @media (max-width:$screen-sm) {
+      background:$nav-background - 30;
+      z-index:-1;
+    }
+  }
+
+  a {
+    @if $dark {
+      color:$gray-lighter !important; 
+    }
+    text-decoration: none;
+  }
+
+  &.two {
+    @media (min-width:$screen-sm) {
+    left:15%; 
+    }
+    background:#fff;
+  }
+  &.three {
+    @media (min-width:$screen-sm) {
+    left:75%; 
+    }
+    background-image:url(#{$theme-img-root}pattern.png);
+    background-image:url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png);
+  }
+
+  @media (max-width:$screen-lg) {
+    height:100px;
+    width:100px;
+    transform: matrix(1,0.3,-1,0.3,-50,50);
+  }
+}
+
+$margin: 2em; // DEFINES THE SPACE BETWEEN THE BLOCKS, AND THE SIZE OF THE BLOCKS
+
+.home-tagline {
+  margin-bottom: 1em;
+
+  small {
+    font-size: 2.2rem;
+    i {
+      vertical-align: -0.1em;
+      font-size: 1.2em;
+      margin:0 0.5rem;
+    }
+  }
+}
+
+.container {
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.home-hero {
+  padding-top: 2em;
+  position: relative;
+
+	.col {
+		position: relative;
+
+		.block {
+      border-radius:1rem;
+			// overflow: hidden;
+			position: relative;
+			background-position:center center !important;
+      background-size:cover !important;
+			background: $primary;
+			margin-bottom: $margin;
+			color:$gray-lighter;
+		}
+	}
+}
+
+@media (min-width:$screen-md ) {
+
+  $height: 51em;
+
+	.col-1 {
+		.block {
+			height: $height;
+		}
+    .zoom {
+      line-height: ($height - $margin * 2);
+    }
+	}
+	.col-2 {
+		.block {
+			height: (($height - $margin) / 2);
+		}
+    .zoom {
+      line-height: (($height - $margin * 4) / 2);
+    }
+	}
+	.col-3 {
+		.block {
+			height: (($height - $margin * 2) / 3);
+		}
+    .zoom {
+      line-height: (($height - $margin * 6) / 3);
+    }
+	}
+}
+
+
+figure.service {
+  position: relative;
+  color:black;
+  width: 100%;
+  height:100%;
+  border-radius:1rem;
+  background:rgba(169, 182, 203, 0.4);
+
+  figcaption {
+
+    @media (min-width:$screen-md + 1) {
+      position: absolute;
+      top:50%; 
+      transform: translateY(-50%);
+    }
+
+    left:0;
+    width: 100%;
+    padding:2em;
+  }
+
+  h2 {
+    color:$gray-lighter;
+    background:$secondcolor;
+    padding:0.8em;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: Lato;
+  	text-transform: uppercase;
+    transition: transform 0.35s;
+    margin:0;
+    border-radius:1rem 1rem 0 0;
+  }
+
+  .box-info {
+    margin:0;
+    z-index: 500;
+    padding:1em;
+    font-size: 1.1em;
+    transition: transform 0.35s;
+    background:rgba(255, 255, 255,0.8);
+    border-radius:0 0 1rem 1rem;
+
+
+    li {
+      margin-left: 1em;
+      @include mylist($secondcolor)
+    }
+
+    a {
+      &:hover {
+       text-decoration: none;
+      }
+    }
+  }
+
+  button {
+    margin-top: 1em;
+  }
+}
+/*==========  LOGOS  ==========*/
+
+.logo-row {
+  padding-top:$wrapper-spacing/2;
+  position: relative;
+
+  .logo {
+    height: $wrapper-spacing;
+
+    img {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      max-width: 150px;
+      // margin:0 auto;
+    }
+  }
+}
+
+/*==========  VIDEO SECTION  ==========*/
+
+.video-wrapper {
+  @media (min-width:$screen-sm) {
+    padding-top:8em;
+  }
+  background:$gray-darker;
+  background-image:url(#{$theme-img-root}pattern.png);
+  background-image: url(http://192.169.219.222/~novastar//wp-content/themes/novastar2015/assets/img/pattern.png);
+  color:$gray-lighter;
+  
+  .inner {
+
+    .video {
+      height:auto;
+      width:100%;
+
+       img {
+          width:100%;
+          height:auto;
+       }
+    }
+  }
+
+  .video-info {
+    @media (min-width:$screen-sm) { // Centers vertically
+      padding-top:25%;
+      margin-bottom: -25%;
+      transform:translateY(-37%);
+    }
+
+    @media (max-width:$screen-sm - 1px) {
+      width:80%;
+      margin:0 auto 1em auto;
+      text-align: center;
+    }
+  }
+
+  button {
+    display: block;
+    width:50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    @media (max-width:$screen-sm) {
+      margin:2em auto;
+    }
+  }
+
+  .title {
+    color:$gray-lighter;
+  }
+
+} 
+// END VIDEO WRAPPER
+
+
+/*==========  CONTACT SECTION  ==========*/
+
+.contact-cta {
+  position: relative;
+
+  > div {
+    position: relative;
+  }
+
+  @media (max-width:$screen-sm) {
+    margin-top: 1.5em;  
+  }
+
+  .contact-info {
+    @media (min-width:$screen-sm) {
+      position: absolute;
+      padding:0;
+    }
+
+    right:0;
+    height:100%;
+    padding-top: 2em;
+
+    @media (min-width:$screen-sm) {
+      padding-top: 8em;
+    }
+
+    padding-bottom: 2em;
+    text-align: center;
+
+    h1 {
+      width:70%;
+      margin:0 auto 0.5em auto;
+      padding-bottom: 0.3em;
+      border-bottom: 2px solid $gray-dark;
+    }
+
+    address {
+      margin:0;
+      margin-top: 0.8em;
+      i {
+        margin-right: 1em;
+        font-size: 1.2em;
+      }
+    }
+
+    .content-block {
+      @media (min-width:$screen-sm) { // Centers vertically
+        position: absolute;
+        top:50%;
+        left:0;
+        width:100%;
+        transform:translateY(-50%);
+      }
+    }   
+  }
+
+  .map-container {
+      position: relative;
+      padding-bottom:30%;
+      height: 0;
+      overflow: hidden;
+
+      @media (max-width:$screen-lg) {
+        padding-bottom:40%;
+      }
+
+      @media (max-width:$screen-sm) {
+        padding-bottom:50%;
+      }
+
+      @media (max-width:$screen-sm) {
+        padding-bottom:60%;
+        margin: 0 1.5em;
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+  }
+}
+/* HOME PAGE MEDIA QUERIES
+---------------------------------------- */
+@media (max-width:$screen-lg) {
+  figure.service {
+    h2 {
+      font-size: 1.8em;
+    }
+  }
+}

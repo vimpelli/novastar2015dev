@@ -1,16 +1,16 @@
 /*==========  PRE-FOOTER SECTION  ==========*/
 
 .pre-footer {
-	background:$nav-background; // Set this to nav-background so that the color matches the header
+	background:$gray-darker;
 
 	.light-text {
 		h3 {
-			color:$gray-light;
+			color:$gray-lighter;
 		}
 	}
 
-	.widget {
-
+	a {
+		color:$primary + 40;
 	}
 
 	/* PreFooter Call to Action */
@@ -19,7 +19,7 @@
 		text-align: center;
 		margin-bottom: 1em;
 		padding-bottom: 3em;
-		border-bottom: 2px solid $gray-light;
+		border-bottom: 2px solid $gray-lighter;
 
 		img {
 			max-width: 250px;
@@ -70,6 +70,14 @@
 
 	/* About Novastar section */
 
+	.pre-footer-about {
+		img {
+			padding:1em;
+			float:left;
+			max-height: 8em;
+			max-width: 100%;
+		}
+	}
 
 
 	/* Custom Menu */
@@ -165,7 +173,8 @@
 			}
 		}
 		.post-date {
-			color:$gray;
+			color:$gray-light;
+			font-size:0.8em;
 
 			&:before {
 				content:'| ';
@@ -186,7 +195,7 @@ footer {
 	.copyright {
 		text-align: center;
 		margin:0;
-		color:$gray;
+		color:$gray-light;
 		font-weight:lighter;
 		vertical-align:middle;
 		padding-bottom: 2em;
@@ -195,11 +204,4 @@ footer {
 			vertical-align: inherit;
 		}
 	}
-
-	// .pixelvine-link {
-	// 	padding-top: 1em;
-	// 	display:block;
-	// 	line-height: 0;
-	// }
-
 }
