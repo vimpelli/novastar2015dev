@@ -49,6 +49,30 @@ $args = array(
 
 register_sidebar( $args );
 
+$args = array(
+    'name'          => __( 'Email Signup'),
+    'description'   => 'This widget area is only to hold email signup forms.',
+    'class'         => 'email-signup',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+);
+
+register_sidebar( $args );
+
+$args = array(
+    'name'          => __( 'Single Post Sidebar'),
+    'description'   => 'This widget area is for a single post.',
+    'class'         => 'single-post-sidebar',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+);
+
+register_sidebar( $args );
+
 // Wrap up function for responsive image swapping from the RICG plugin 
 function imgswap($id, $size) {
 
@@ -112,18 +136,20 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-/*==========  Include to show date theme file was modified  ==========*/
+/*==========  Functions to get next and previous post urls ==========*/
 
-function date_modified() {
+function next_post_url() {
+    $npl=explode('"',get_next_post_link('%link', TRUE ));
 
-    echo '<div class="mod-time">';
+    $npl_url=$npl[1]; 
 
-    $path = realpath(__FILE__);
-
-    date_default_timezone_set('America/New_York');
-
-    $time = date ( 'l F d, Y @ h:ia' , filemtime($path));
-    
-    echo "<p>This page was last updated on: </p><span>" . $time ."</span></div>";
-
+    echo $npl_url; 
 }
+function prev_post_url() {
+    $npl=explode('"',get_previous_post_link('%link', TRUE ));
+
+    $npl_url=$npl[1]; 
+
+    echo $npl_url; 
+}
+

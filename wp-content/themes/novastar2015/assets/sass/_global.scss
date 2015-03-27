@@ -1,3 +1,19 @@
+
+/*==========  MIXINS  ==========*/
+
+@mixin mylist($color) {
+	list-style-type: none;
+
+  &:before {
+    margin:0 0.5em 0 -0.5em;
+    font-family: FontAwesome;
+    content:"\f101";
+    color:$color;
+  }
+}
+
+/*==========  ELEMENTS  ==========*/
+
 div.mod-time {
 	background:red;
 	padding: 0.5em;
@@ -38,8 +54,13 @@ a {
 	position: relative;
 	padding-bottom:$wrapper-spacing;
 
-	@media (max-width:$screen-sm) {
-		padding-top:5em;
+	// @media (max-width:$screen-sm) {
+	// 	padding-top:5em;
+	// 	padding-bottom:5em;
+	// }
+
+	@media (max-width:$screen-xs) {
+		padding-top:0;
 		padding-bottom:5em;
 	}
 
@@ -64,9 +85,16 @@ a {
 	background:red;
 }
 
+*[type="button"] {
+	text-transform:uppercase;
+	letter-spacing: 0.05em;
+}
+
 /*==========  SEARCH FORM  ==========*/
 
 form.search-form {
+	margin:0;
+
   div.input-group {
     width: 100%;
     // transform: translateY(-50%);
@@ -90,19 +118,6 @@ form.search-form {
       letter-spacing: 0.05em;
       color:$gray-dark;
     }
-  }
-}
-
-/*==========  MIXINS  ==========*/
-
-@mixin mylist($color) {
-	list-style-type: none;
-
-  &:before {
-    margin:0 0.5em 0 -0.5em;
-    font-family: FontAwesome;
-    content:"\f101";
-    color:$color;
   }
 }
 

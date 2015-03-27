@@ -1,0 +1,124 @@
+/*==========  SINGLE POST STYLING  ==========*/
+
+.single-post {
+
+  h1.entry-title {
+
+    small {
+      margin-left: 0.5em;
+      text-transform: uppercase;
+      font-size: 0.5em;
+
+     @media (max-width:$screen-md) {
+      display: block;
+      width:100%;
+      margin-top: 0.3em;
+     }
+
+    }
+  }
+
+  .post-header-image {
+    position: relative;
+    // margin:4em 0;
+    max-height:30em;
+    overflow: hidden;
+    
+    @media (min-width:$screen-sm) {
+
+      &:before {
+        background:white;
+        position: absolute;
+        content:'';
+        top:0;
+        left:50%;
+        height:750px;
+        width:900px;
+        border-radius:100%;
+        transform: matrix(2.5,0.3,-1.5,0.4,-300,-480);
+        // height:500px;
+        // width:200px;
+        // right:-8.5em;
+        // transform: skew(20deg);
+      }
+
+    }
+
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+
+  ol.breadcrumb {
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+
+  .entry-content {
+    padding:2em;
+
+    @media (max-width:$screen-xs) {
+      padding:0 1em;
+    }
+  }
+
+  aside.single-sidebar {
+    padding:1em;
+    border-left: 2px solid gray;
+
+    li {
+      @include mylist($secondcolor);
+    }
+  }
+
+  .post-bottom-actions {
+    border-top: 1px solid $gray-lighter;
+    padding-top: 2em;
+    margin-top: 2em;
+    height:6em;
+
+    .subscribe {
+      height:100%;
+      input {
+        border-radius: 0;
+        height:100%;
+        display: inline-block;
+        width:50%;
+        float:left;
+        border:0;
+        background:$gray-lighter + 20;
+        text-align: center;
+        border-bottom: 0.5em solid $gray-light;
+
+      }
+
+      a {
+        height:100%;
+        display: inline-block;
+        width:50%;
+      }
+    }
+    
+    .back {
+      height:100%;
+    }
+
+    a.btn {
+      height:100%;
+      border-radius: 0;
+      border:0;
+      border-bottom: 0.5em solid $primary;
+      padding: 1em;
+      text-transform: uppercase;
+      background:$primary +50;
+      transition: 0.1s all;
+
+      &:active {
+        transition: 0.1s all;
+        padding-top: 1.5em;
+        border-bottom: 0.01em solid $primary;
+      }
+    }
+  }
+}

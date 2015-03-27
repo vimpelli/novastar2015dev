@@ -69,7 +69,7 @@
 
 		<div class="col-sm-12">
 			<?php
-			$args = array( 'posts_per_page' => 4, 'category_name' => 'testimonial');
+			$args = array( 'post_type' => 'testimonial', 'posts_per_page' => 4);
 
 			$postslist = get_posts( $args );
 

@@ -54,7 +54,7 @@
 
 .home-tagline {
   width:75%;
-  padding-bottom: 1em;
+  // padding-bottom: 1em;
   margin-bottom: 1em;
 }
 
@@ -367,6 +367,7 @@ $height: 25em;
       left:50%;
       transform:translate(-50%, -50%);
       max-width: 150px;
+      max-height:80px;
 
       @media (max-width:$screen-xs) {
         padding:1rem;
@@ -433,8 +434,6 @@ $height: 25em;
   }
 
 } 
-// END VIDEO WRAPPER
-
 
 /*==========  CONTACT SECTION  ==========*/
 

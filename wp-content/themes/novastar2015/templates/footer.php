@@ -1,4 +1,4 @@
-<?php if (is_page() && !is_front_page()): ?>
+<?php if (!is_front_page()): ?>
 <div class="container-fluid">
 	<div class="row footer-menu">
 		<div class="container">

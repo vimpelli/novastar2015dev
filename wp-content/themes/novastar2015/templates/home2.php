@@ -11,10 +11,10 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>calibration.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_1_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>Calibration</h2>
-						<p>A2LA accredited instrument calibration.</p>
+						<h2><?php the_field('box_1_heading'); ?></h2>
+						<p><?php the_field('box_1_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/calibration"></a>
@@ -23,10 +23,10 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>newhardware.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_2_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>New IT Hardware</h2>
-						<p>HP, CISCO, SGI and more.</p>
+						<h2><?php the_field('box_2_heading'); ?></h2>
+						<p><?php the_field('box_2_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/new-hardware"></a>
@@ -35,10 +35,10 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>printer.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_3_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>Software</h2>
-						<p>Dassault Systemes, Siemens, and Microsoft.</p>
+						<h2><?php the_field('box_3_heading'); ?></h2>
+						<p><?php the_field('box_3_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/software"></a>
@@ -47,10 +47,10 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>services.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_4_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>IT Services</h2>
-						<p>Full IT lifecycle asset managment tracking.</p>
+						<h2><?php the_field('box_4_heading'); ?></h2>
+						<p><?php the_field('box_4_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/it-services"></a>
@@ -59,10 +59,10 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>remarketing.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_5_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>Remarketing</h2>
-						<p>Recover value of used IT assets.</p>
+						<h2><?php the_field('box_5_heading'); ?></h2>
+						<p><?php the_field('box_5_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/re-marketing"></a>
@@ -71,61 +71,64 @@ Template Name: Home Page Layout 2
 		<div class="col-sm-6 col-md-4">
 			<div class="block">
 				<figure class="service">
-					<div class="img-wrapper"><img src="<?php uploads_dir(); ?>usedsales2.jpg" class="img-responsive" alt="Image"></div>
+					<div class="img-wrapper"><img src="<?php the_field('box_6_image'); ?>" class="img-responsive" alt="Image"></div>
 					<figcaption>
-						<h2>Used IT Hardware</h2>
-						<p>Play it Again PCs</p>
+						<h2><?php the_field('box_6_heading'); ?></h2>
+						<p><?php the_field('box_6_sub'); ?></p>
 					</figcaption>
 				</figure>
 				<a href="<?php echo home_url(); ?>/used-sales"></a>
 			</div>
 		</div>
 	</div> <!-- row home hero -->
-<!-- </div> -->
 
-<!-- <div class="container-fluid wrapper"> -->
 	<div class="row logo-row">
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>piapc72.png">
+			<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>dass.png">
+			<img class="img-responsive" src="<?php the_field('logo_2'); ?>">
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>hp.png">
+			<img class="img-responsive" src="<?php the_field('logo_3'); ?>">
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>sgi.png">
+			<img class="img-responsive" src="<?php the_field('logo_4'); ?>">
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>siemens72.png">
+			<img class="img-responsive" src="<?php the_field('logo_5'); ?>">
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php uploads_dir(); ?>cisco72.png">
+			<img class="img-responsive" src="<?php the_field('logo_6'); ?>">
 		</div>
 	</div>
-<!-- </div> -->
 
-<!-- <div class="container"> -->
 	<div class="row news-hero">
 		<p class="news-title">News</p>
 	
-		<?php $args = array( 'posts_per_page' => 1, 'category_name' => 'news');
+		<?php $posts = get_field('home_page_hero_post');
 
-			$postslist = get_posts( $args );
-
-			foreach ( $postslist as $post ) :
+			foreach ( $posts as $post ) :
 
 			setup_postdata( $post ); ?>
+
+			<!-- If we're using a standard post -->
 			<?php if (!get_field('use_image')): ?>
+
+				<?php if(get_field('home_news_img')): ?>
 				<div class="news-image col-sm-6 col-md-4">
-			   		<a href="<?php the_permalink();?>"><?php the_post_thumbnail('medium'); ?></a>
+			   		<a href="<?php the_permalink();?>"><img src="<?php the_field('home_news_img'); ?>" class="img-responsive" alt="Image"></a>
 			   	</div>
-			    <div class="news col-sm-6 col-md-8">
+			   	<?php endif; ?>
+
+			    <div class="news <?php if(!get_field('home_news_img')){ echo 'col-sm-12'; } else { echo 'col-sm-6 col-md-8'; } ?>">
 			    	<h3><?php the_title(); ?></h3> 
-			    	<?php the_content(); ?>
+			    	<?php the_excerpt(); ?>
 			   	</div>
+
 			<?php endif; ?>
+
+			<!-- If we're using a large image instead -->
 			<?php if (get_field('use_image')): ?>
 				<a href="<?php the_permalink();?>">
 					<div class="col-sm-12">
@@ -135,11 +138,10 @@ Template Name: Home Page Layout 2
 			<?php endif; ?>
 		   	
 		<?php endforeach; wp_reset_postdata(); ?>
-		<a href=""><p class="news-more">More News</p></a>
+	  
+		<a href="/category/news/"><p class="news-more">More News</p></a>
 	</div>
-<!-- </div> -->
 
-<!-- <div class="wrapper top container"> -->
 	<div class="triangle two"></div>
 </div>
 
@@ -147,13 +149,13 @@ Template Name: Home Page Layout 2
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5 video-info">
-				<h1 class="title">A Legacy of Service</h1>
-				<p class="lead">From the beginning, Novastar's goal has been to provide quality technology solutions for today’s businesses. We strive to keep our focus on quality people, the right product, competitive pricing and customized solutions.</p>
+				<h1 class="title"><?php the_field('video_headline'); ?></h1>
+				<p><?php the_field('video_desc'); ?></p>
 				<button type="button" class="btn btn-default">Contact Us</button>
 			</div>
 			<div class="col-sm-7 inner">
-				<div class="video">
-					<img class="img img-responsive" src="<?php uploads_dir();?>placeholder.jpg">
+				<div class="embed-responsive embed-responsive-16by9">
+  					<iframe class="embed-responsive-item" src="<?php the_field('video_url'); ?>"></iframe>
 				</div>
 			</div>
 		</div>
