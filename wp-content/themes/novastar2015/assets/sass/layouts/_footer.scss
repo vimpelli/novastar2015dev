@@ -57,12 +57,12 @@
 
 			&.first {
 				color:$gray-darker;
-				background:$cta;
+				background:$green;
 				border-color:$gray-darker;
 				margin-right: 1em;
 
 				&:hover {
-					background:$cta + 50;
+					background:$green-hover;
 				}
 			}
 		}

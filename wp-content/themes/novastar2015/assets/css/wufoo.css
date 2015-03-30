@@ -111,7 +111,7 @@ body,p,div,li,h2,h3,h4,a {
 
 input.btTxt:hover {
 	transition:0.2s all;
-	background: #a8e5ad;
+	background:#75EC75;
 }
 
 input.btTxt {
@@ -123,5 +123,5 @@ input.btTxt {
 	font-family: Lato;
 	border:none;
 	border-radius:0.5em;
-	background: #99cd97;
+	background: #5cb85c;
 }

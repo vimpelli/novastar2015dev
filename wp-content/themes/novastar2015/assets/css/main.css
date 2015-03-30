@@ -5224,11 +5224,11 @@ header.navbar {
         background: #707070; }
       .pre-footer .pre-footer-cta button.first {
         color: #525252;
-        background: #B0FCC1;
+        background: #5cb85c;
         border-color: #525252;
         margin-right: 1em; }
         .pre-footer .pre-footer-cta button.first:hover {
-          background: #e2fff3; }
+          background: #75EC75; }
   .pre-footer .pre-footer-about img {
     padding: 1em;
     max-height: 8em;
@@ -5480,8 +5480,7 @@ li.well {
   width: 75%;
   margin-bottom: 1em; }
 
-/*==========  HOME REV 1  ==========*/
-/*==========  HOME REV 2  ==========*/
+/*==========  MAIN CONTENT BLOCKS AT TOP OF PAGE  ==========*/
 .home-hero .block {
   border-radius: 1em;
   position: relative;
@@ -5598,7 +5597,7 @@ li.well {
     .news-hero .news-more:hover {
       -webkit-transition: 0.2s all;
               transition: 0.2s all;
-      border-bottom: 0.5em solid #79D4B7; }
+      border-bottom: 0.5em solid #5cb85c; }
   .news-hero .news-image img {
     display: block;
     height: auto;

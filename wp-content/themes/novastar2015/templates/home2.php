@@ -139,7 +139,7 @@ Template Name: Home Page Layout 2
 		   	
 		<?php endforeach; wp_reset_postdata(); ?>
 	  
-		<a href="/category/news/"><p class="news-more">More News</p></a>
+		<a href="./category/news/"><p class="news-more">More News</p></a>
 	</div>
 
 	<div class="triangle two"></div>
