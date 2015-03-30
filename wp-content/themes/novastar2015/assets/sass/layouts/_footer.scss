@@ -73,9 +73,13 @@
 	.pre-footer-about {
 		img {
 			padding:1em;
-			float:left;
+			// float:left;
 			max-height: 8em;
 			max-width: 100%;
+
+			&:first-child {
+				float: left;
+			}
 		}
 	}
 

@@ -1,0 +1,127 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Wufoo Custom Css	
+ Author : Vince Impellizzeri / Pixelvine Creative
+ URL : http://www.pixelvinecreative.com
+
+ Last Updated : 3/30/2015
+
+- - - - - - - - - - - - - - - - - - - - - */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/*@font-face {
+    font-family: Lato;
+    src: url(http://fonts.googleapis.com/css?family=Lato);
+}*/
+
+body,p,div,li,h2,h3,h4,a {
+	font-style:14px;
+	font-family: Lato;
+}
+
+/* Backgrounds */
+
+.wufoo input.text, .wufoo textarea.textarea {
+	background:#FFFFFF url(/images/fieldbg.gif) repeat-x top;
+}
+
+.wufoo .focused {
+	background:#FFF7C0;
+}
+.wufoo .instruct {
+	background-color:#F5F5F5;
+}
+
+/* Borders */
+#container{
+	border:0 solid #cccccc;
+}
+
+.wufoo .info{
+	border-bottom:1px dotted #CCCCCC;
+}
+
+.wufoo .instruct {
+	border:1px solid #e6e6e6;
+}
+
+/* Typography */
+.wufoo .info h2 {
+	font-size:2.3em;
+	font-family:Lato;
+	color: #525252;
+}
+
+.wufoo .info div {
+	font-size:95%;
+	font-family:inherit;
+	color:#444444;
+}
+
+.wufoo .section h3 {
+	font-size:2em;
+	font-family:inherit;
+	background:#FFFFFF;
+	color:#000000;
+}
+
+.wufoo .section div {
+	font-size:1em;
+	font-family:inherit;
+	color:#444444;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+	font-size:1.2em;
+	font-weight: normal;
+	font-family:inherit;
+	color:#243772;
+}
+
+.wufoo li div, .wufoo li div label, .wufoo li span label {
+	font-family:inherit;
+	color:#444444;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice {
+	font-size:100%;
+	font-family:inherit;
+	color:#333333;
+}
+
+.wufoo label.choice {
+	color:#444444;
+}
+
+.wufoo .instruct {
+	font-size:80%;
+	font-family:inherit;
+	color:#444444;
+}
+
+.wufoo li textarea, .wufoo li input {
+	padding:0.5em 1em;
+	border-radius: 0.5em;
+}
+
+.wufoo li textarea {
+	min-width:90%;
+	max-width: 90%;
+}
+
+input.btTxt:hover {
+	transition:0.2s all;
+	background: #a8e5ad;
+}
+
+input.btTxt {
+	transition:0.2s all;
+	cursor:pointer;
+	text-transform: uppercase;
+	padding: 0.5em 2.5em;
+	width: auto;
+	font-family: Lato;
+	border:none;
+	border-radius:0.5em;
+	background: #99cd97;
+}

@@ -22,7 +22,6 @@
 				<aside><?php the_field('contact_text'); ?></aside>
 			</div>
 		</div>
-		
 		<div class="col-sm-6 contact-form">
 			<?php the_field('contact_form_code'); ?>
 		</div>

@@ -5231,9 +5231,10 @@ header.navbar {
           background: #e2fff3; }
   .pre-footer .pre-footer-about img {
     padding: 1em;
-    float: left;
     max-height: 8em;
     max-width: 100%; }
+    .pre-footer .pre-footer-about img:first-child {
+      float: left; }
   .pre-footer .menu {
     padding-left: 0; }
     .pre-footer .menu li {
