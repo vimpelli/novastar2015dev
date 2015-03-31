@@ -73,6 +73,18 @@ $args = array(
 
 register_sidebar( $args );
 
+$args = array(
+    'name'          => __( 'Page Sidebar'),
+    'description'   => 'This widget area is for use on a page.',
+    'class'         => 'page-sidebar',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+);
+
+register_sidebar( $args );
+
 // Wrap up function for responsive image swapping from the RICG plugin 
 function imgswap($id, $size) {
 
@@ -151,5 +163,38 @@ function prev_post_url() {
     $npl_url=$npl[1]; 
 
     echo $npl_url; 
+}
+
+//Custom Theme Settings
+add_action('admin_menu', 'add_glo_interface');
+
+function add_glo_interface() {
+    add_options_page('Global Options', 'Global Options', '8', 'functions', 'editglobaloptions');
+}
+
+function editglobaloptions() {
+    ?>
+    <div class='wrap'>
+    <h2>Global Custom Fields</h2>
+    <form method="post" action="options.php">
+    <?php wp_nonce_field('update-options') ?>
+
+    <p><strong>Novastar Phone Number:</strong><br />
+    <input type="text" name="phonenumber" size="45" value="<?php echo get_option('phonenumber'); ?>" /></p>
+
+    <p><strong>Novastar Info Email Address</strong><br/>
+    <input type="text" name="email" size="45" value="<?php echo get_option('email'); ?>"/></p>
+
+    <p><strong>Novastar Address</strong><br/>
+    <input type="text" name="address" size="45" value="<?php echo get_option('address'); ?>"/></p>
+
+    <button type="submit" name="Submit" value="Update Options" class="btn btn-primary">Submit</button>
+
+    <input type="hidden" name="action" value="update" />
+    <input type="hidden" name="page_options" value="phonenumber,email,address" />
+
+    </form>
+    </div>
+    <?php
 }
 

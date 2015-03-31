@@ -1,5 +1,5 @@
 /*==========  NEW HARDWARE PAGE  ==========*/
-$product-height:30em;
+$product-height:12em;
 
 .new-hardware {
 
@@ -10,7 +10,6 @@ $product-height:30em;
 	}
 	
 	article {
-
 		margin-bottom: 2em;
 		border-radius: 1em;
 		border-bottom: 1em solid $primary;
@@ -22,16 +21,27 @@ $product-height:30em;
 			// height:$product-height;
 		}
 		@media (min-width:$screen-sm) {
-			height:$product-height;
+			// height:$product-height;
 		}
 
 		background:$gray-lighter;
 		padding:2em;
 
-		img {
-			max-height:150px;
-			margin:0 auto 1em auto;
+		.img-container {
+			position: relative;
+			height:$product-height;
+
+			img {
+				position: absolute;
+				max-width: $product-height * 1.16;
+				max-height:$product-height * 0.8;
+				left:50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+			}
 		}
+
+		
 
 		.product-title { 
 			font-size: 1.2em;
@@ -54,6 +64,9 @@ $product-height:30em;
 		}
 
 		.product-description {
+			@media (min-width:$screen-sm) {
+				height: $product-height/2;
+			}
 		}
 
 		button {

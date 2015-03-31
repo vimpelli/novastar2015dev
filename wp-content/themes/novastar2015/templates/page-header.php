@@ -1,6 +1,10 @@
+<?php if(get_field('header_image')) { get_template_part('templates/page', 'headerhero'); } ?>
+
+<?php if(!get_field('header_image')): ?>
+
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 page-header">
 			<h1><?php echo roots_title(); ?></h1>
 		</div>
 		<div class="col-sm-12">
@@ -8,3 +12,5 @@
 		</div>
 	</div>
 </div>
+
+<?php endif; ?>

@@ -1,15 +1,15 @@
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part('templates/page', 'headerhero'); ?>
 
-<div class="container wrapper-top remarketing">
-	<div class="row section top">
+<div class="container remarketing">
+	<div class="row">
 		<div class="col-sm-12">
 			<div class="page-header">
 				<h1>Asset Recovery & Remarketing </h1>
 			</div><!-- /.page-header -->
 		</div>
 	</div>
-	<div class="row section">
+	<div class="row">
 		<div class="col-sm-12">
 			<h2 class="heading"><?php the_field('section_1_heading'); ?></h2>
 			<p><?php the_field('section_1'); ?></p>

@@ -16,9 +16,9 @@
 		
 		<div class="col-sm-6 contact-info">
 			<div class="content-block">
-				<h3><?php the_field('phone_number'); ?></h3>
-				<address><i class="fa fa-map-marker"></i><?php the_field('address'); ?></address>
-				<address><i class="fa fa-envelope-o"></i><?php the_field('email'); ?></address>
+				<h3><?php echo get_option('phonenumber'); ?></h3>
+				<address><i class="fa fa-map-marker"></i><?php echo get_option('address'); ?></address>
+				<address><i class="fa fa-envelope-o"></i><?php echo get_option('email'); ?></address>
 				<aside><?php the_field('contact_text'); ?></aside>
 			</div>
 		</div>

@@ -1,11 +1,11 @@
 /*==========  PRE-FOOTER SECTION  ==========*/
 
 .pre-footer {
-	background:$gray-darker;
+	background:$gray-base +10;
 
 	.light-text {
 		h3 {
-			color:$gray-lighter;
+			color:white;
 		}
 	}
 
@@ -57,12 +57,12 @@
 
 			&.first {
 				color:$gray-darker;
-				background:$green;
+				background:$green-hover;
 				border-color:$gray-darker;
 				margin-right: 1em;
 
 				&:hover {
-					background:$green-hover;
+					background:$green;
 				}
 			}
 		}
@@ -72,14 +72,10 @@
 
 	.pre-footer-about {
 		img {
+			display: inline-block;
 			padding:1em;
-			// float:left;
 			max-height: 8em;
 			max-width: 100%;
-
-			&:first-child {
-				float: left;
-			}
 		}
 	}
 
@@ -194,7 +190,7 @@
 footer {
 	padding-top: 2em;
 	position: relative;
-	background:$gray-base;
+	background:$gray-base - 10;
 
 	.copyright {
 		text-align: center;

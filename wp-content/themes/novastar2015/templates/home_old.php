@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Home Page Layout 1
+Old Template - First (old) Home Page Layout
 */
 ?>
 <div class="container wrapper top">

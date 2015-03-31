@@ -21,12 +21,6 @@
 			<a target=_blank href="https://store.piapc.com/Default.aspx"><button type="button" class="btn btn-lg btn-block btn-success">Visit Website</button></a>
 		</div>
 	</div>
-
-	<div class="row">
-		<div class="col-sm-4">
-			
-		</div>
-	</div>
 </div>
 
 

@@ -24,6 +24,11 @@ div.mod-time {
 	color:white;
 }
 
+img {
+	max-width:100%;
+	height:auto;
+}
+
 .wrap {
 	max-width:2000px;
 	margin:0 auto;
@@ -54,19 +59,14 @@ a {
 	position: relative;
 	padding-bottom:$wrapper-spacing;
 
-	// @media (max-width:$screen-sm) {
-	// 	padding-top:5em;
-	// 	padding-bottom:5em;
-	// }
-
-	@media (max-width:$screen-xs) {
-		padding-top:0;
+	@media (max-width:$screen-sm) {
+		// padding-top:5em;
 		padding-bottom:5em;
 	}
 
 	&.top {
 		margin-top: 0;
-		padding-top: 3em;
+		padding-top: 0;
 	}
 }
 
@@ -147,8 +147,16 @@ h4 {
 	font-size: 1.8em;
 }
 
-p,a,li,button {
+a,li,button {
 	font-size:1em;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+.large {
+	font-size:1.2em;
 }
 
 body {

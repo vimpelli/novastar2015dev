@@ -7,7 +7,7 @@
   margin:2em auto 4em auto;
   overflow:hidden;
   border:1em solid $primary;
-  max-height: 750px;
+  max-height: 700px;
 
   @media (max-width:$screen-xs) {
     border-width:0.5em;
@@ -24,16 +24,16 @@
     position: absolute;
     width: 100%;
     bottom:-0.4em;
-    font-size: 3.5em;
+    font-size: 3em;
     
     @media (max-width:$screen-lg) {
-      font-size: 2.8em;
+      font-size: 2.4em;
     }
     @media (max-width:$screen-md) {
-      font-size: 2em;
+      font-size: 1.5em;
     }
     @media (max-width:$screen-sm) {
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     border:none;
@@ -83,7 +83,7 @@ ol.breadcrumb {
     padding:0 0 3em 0;
   }
 
-  ul { 
+  > ul { 
     margin: 2em 0;
     // padding:0;
     // font-size: 1.2em;
@@ -93,7 +93,9 @@ ol.breadcrumb {
     @media (max-width:$screen-xs) {
       padding:0;
     }
+  }
 
+  ul {
     li {
       @include mylist($secondcolor)
     }
@@ -105,11 +107,15 @@ li.well {
 }
 
 
-/*==========  PAGE FOOTER SIDEBAR  ==========*/
+/*==========  PAGE FOOTER WIDGETS  ==========*/
 
 .footer-menu {
   position: relative;
   background:$gray-lighter;
+
+  form.search-form div.input-group button {
+    width:100%;
+  }
 
   section {
     margin:0;

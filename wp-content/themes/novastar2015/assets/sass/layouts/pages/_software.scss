@@ -28,7 +28,7 @@
 
 		
 
-		img {
+		img.single {
 		@media (min-width:$screen-md) {
 			position: absolute;
 			top:50%;
@@ -50,6 +50,34 @@
 				margin-top: 2em;
 
 			}
+		}
+		.img-container {
+			height:14em;
+
+			@media (max-width:$screen-md) {
+				height:10em;
+			}
+			@media (max-width:$screen-xs) {
+				height:12em;
+			}
+		}
+
+		div.centered-img {
+			top:60%;
+			position: relative;
+
+			@media (max-width:$screen-md) {
+				top:50%;
+			}
+
+			img {
+				position: absolute;
+				top:50%;
+				left:50%;
+				max-width: 85%;
+				transform: translate(-50%,-50%);
+			}
+			
 		}
 	}
 }
