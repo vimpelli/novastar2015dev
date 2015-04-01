@@ -2,9 +2,10 @@
 ------------------------- */
 
 .calibration {
-	@media (max-width:$screen-xs) {
-		padding-top:0;
+	.section {
+		ul {
+			margin: 1.5em 0;
+		}
 	}
-	
 }
 

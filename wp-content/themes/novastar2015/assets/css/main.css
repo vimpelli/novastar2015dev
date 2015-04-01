@@ -4868,6 +4868,7 @@ a {
   padding-bottom: 8em; }
   @media (max-width: 768px) {
     .wrapper {
+      padding-top: 5em;
       padding-bottom: 5em; } }
   .wrapper.top {
     margin-top: 0;
@@ -5319,7 +5320,7 @@ footer {
   footer .copyright {
     text-align: center;
     margin: 0;
-    color: #b0b0b0;
+    color: #7d7d7d;
     font-weight: lighter;
     vertical-align: middle;
     padding-bottom: 2em; }
@@ -5658,7 +5659,6 @@ li.well {
 /*==========  VIDEO SECTION  ==========*/
 .video-wrapper {
   background: #525252;
-  background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png);
   background-image: url(http://192.169.219.222/~novastar//wp-content/themes/novastar2015/assets/img/pattern.png);
   color: #e3e3e3; }
   @media (min-width: 768px) {
@@ -5765,9 +5765,8 @@ li.well {
     font-size: 1.8em; } }
 /* CALIBRATION PAGE
 ------------------------- */
-@media (max-width: 480px) {
-  .calibration {
-    padding-top: 0; } }
+.calibration .section ul {
+  margin: 1.5em 0; }
 
 /*==========  NEW HARDWARE PAGE  ==========*/
 .new-hardware .products-listing > li {
@@ -5978,6 +5977,19 @@ li.well {
       background: #243772;
       text-transform: uppercase;
       text-align: center; }
+
+/*==========  ABOUT PAGE  ==========*/
+.container + .about .about-us figure {
+  padding-bottom: 1.5em; }
+  .container + .about .about-us figure figcaption {
+    letter-spacing: 0.1em;
+    text-align: center; }
+.container + .about .about-us img.logo {
+  border-bottom: 1px solid #b0b0b0;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding-bottom: 1.5em; }
 
 /*==========  POST ARCHIVE PAGE STYLING  ==========*/
 .archive-header h1 {

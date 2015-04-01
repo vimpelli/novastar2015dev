@@ -1,0 +1,21 @@
+/*==========  ABOUT PAGE  ==========*/
+.container + .about {
+
+	.about-us {
+		figure {
+			padding-bottom: 1.5em;
+			figcaption {
+				letter-spacing: 0.1em;
+				text-align: center;
+			}
+		}
+
+		img.logo {
+			border-bottom: 1px solid $gray-light;
+			width:50%;
+			margin:0 auto;
+			margin-bottom: 1em;
+			padding-bottom: 1.5em;
+		}
+	}
+}
