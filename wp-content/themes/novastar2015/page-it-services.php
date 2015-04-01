@@ -3,40 +3,46 @@
 
 <div class="container wrapper-top itservices">
 	<div class="row section divider">
-		<div class="col-sm-12">
-			<h1><?php the_field('section_1_heading'); ?></h1>
-			<p class="lead"><?php the_field('section_1'); ?></p>
-		</div><!-- /.col-sm-12 -->
+		<h1 class="page-header"><?php the_field('intro_heading'); ?></h1>
+		<div class="col-md-6 col-lg-8">
+			<p class="lead"><?php the_field('intro_body'); ?></p>
+		</div>
+		<div class="col-md-6 col-lg-4">
+			<img src="<?php the_field('intro_image'); ?>" class="img-responsive img-rounded" alt="Image">
+		</div>
 	</div>
+
+	<div class="row section divider lifecycle">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h2 class="heading"><?php the_field('first_section_heading'); ?></h2>
+		</div>
+		<div class="col-md-6 col-lg-4 stage">
+			<?php the_field('first_section_content'); ?>
+		</div>
+		<div class="col-md-6 col-lg-8 img-wrapper">
+			<img src="<?php the_field('first_section_image'); ?>" class="img-responsive" alt="Image">
+		</div>
+	</div>
+
 	<div class="row section">
 		<div class="col-sm-6">
 			<div class="info">
-				<h3 class="heading"><?php the_field('section_2_heading'); ?></h3>
-				<p><?php the_field('section_2'); ?></p>
-				<button class="btn btn-block btn-success btn-md">Learn More</button>
+				<h3 class="heading"><?php the_field('block_1_heading'); ?></h3>
+				<p><?php the_field('block_1_content'); ?></p>
+				<?php if(get_field('block_1_link')): ?>
+					<a href="<?php the_field('block_1_link'); ?>" class="btn btn-block btn-success btn-md">Learn More</a>
+				<?php endif; ?>
 			</div>
-		</div><!-- /.col-sm-6 -->
+		</div>
 		<div class="col-sm-6">
 			<div class="info">
-				<h3 class="heading"><?php the_field('section_3_heading'); ?></h3>
-				<p><?php the_field('section_3'); ?></p>
-				<button class="btn btn-block btn-success btn-md">Learn More</button>
+				<h3 class="heading"><?php the_field('block_2_heading'); ?></h3>
+				<p><?php the_field('block_2_content'); ?></p>
+				<?php if(get_field('block_2_link')): ?>
+					<a href="<?php the_field('block_2_link'); ?>" class="btn btn-block btn-success btn-md">Learn More</a>
+				<?php endif; ?>
 			</div>
-		</div><!-- /.col-sm-6 -->
-		<!-- <div class="col-sm-6">
-			<div class="info">
-				<h3 class="heading"><?php the_field('section_4_heading'); ?></h3>
-				<p><?php the_field('section_4'); ?></p>
-				<button class="btn btn-block btn-success btn-md">Learn More</button>
-			</div>
-		</div> --><!-- /.col-sm-6 -->
-		<!-- <div class="col-sm-6">
-			<div class="info">
-				<h3 class="heading"><?php the_field('section_5_heading'); ?></h3>
-				<p><?php the_field('section_5'); ?></p>
-				<button class="btn btn-block btn-success btn-md">Learn More</button>
-			</div>
-		</div> --><!-- /.col-sm-6 -->
+		</div>
 	</div>
 </div>
 

@@ -9,4 +9,49 @@
 			margin-bottom: 2em;
 		}
 	}
+
+	.lifecycle {
+		.img-wrapper {
+			img {
+				width:100%;
+				height:auto;
+
+				@media (max-width:$screen-lg) and (min-width:$screen-md) {
+					position: absolute;
+					margin-top:50%;
+					transform:translateY(-25%);
+				}
+			}
+		}
+
+		.stage {
+			margin-top: 1.5em;
+			text-align: right;
+
+			h3 {
+				color:$secondcolor;
+				display: inline-block;
+				width:100%;
+				background:$primary +60;
+				font-family: Lato;
+				font-weight: 400;
+				border-radius:0 0.7em 0 0;
+				padding:0.5rem 0.5em 0.5em 1em;
+				padding-bottom: 0.5rem;
+				border-bottom: 1px solid $primary;
+			}
+
+			ul {
+				padding:0;
+				margin-bottom: 2em;
+
+				li {
+					font-size: 1.2em;
+					list-style-type: none !important;
+					margin:0;
+					padding:0;
+				}
+			}
+		}
+	}
 }

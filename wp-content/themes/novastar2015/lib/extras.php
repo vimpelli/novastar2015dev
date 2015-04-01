@@ -26,9 +26,9 @@ add_filter('wp_title', 'roots_wp_title', 10);
 * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
 */
 $args = array(
-	'name'          => __( 'Header Left'),
-	'description'   => 'This is the area directly to the left of the logo',
-	'class'         => 'header-left',
+	'name'          => __( 'Third Sidebar'),
+	'description'   => '',
+	'class'         => 'third-sidebar',
 	'before_widget' => '<div class="header_flex_child header-left">',
 	'after_widget'  => '</div>',
 	'before_title'  => '',
@@ -65,8 +65,8 @@ $args = array(
     'name'          => __( 'Single Post Sidebar'),
     'description'   => 'This widget area is for a single post.',
     'class'         => 'single-post-sidebar',
-    'before_widget' => '',
-    'after_widget'  => '',
+    'before_widget' => '<div class="widget-wrapper">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
 );

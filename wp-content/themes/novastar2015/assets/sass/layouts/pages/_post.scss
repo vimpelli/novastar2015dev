@@ -80,23 +80,69 @@
 
     .subscribe {
       height:100%;
-      input {
-        border-radius: 0;
-        height:100%;
-        display: inline-block;
-        width:50%;
-        float:left;
-        border:0;
-        background:$gray-lighter + 20;
-        text-align: center;
-        border-bottom: 0.5em solid $gray-light;
 
+      > div {
+        height:100%;
       }
 
-      a {
-        height:100%;
-        display: inline-block;
+      div.es_lablebox {
+        display: none;
+      }
+
+      .es_caption {
+        padding:0;
+      }
+
+      .es_msg {
+        padding:0;
+        color:inherit;
+      }
+
+      div.es_textbox { /* email input div */
+        display:inline-block;
+        float:left;
         width:50%;
+        height:100%;
+        padding:0;
+      }
+
+      div.es_button {
+        width: 50%;
+        display: inline-block;
+        padding:0;
+        height: 100%;
+      }
+
+      input.es_textbox_class { /* email input */
+        height:100%;
+        width:100%;
+      }
+
+      input.es_textbox_button {
+        width:100%;
+        border-radius:0 0.5em 0.5em 0;
+
+        @media (max-width:$screen-sm) {
+          border-radius:0 0 0.5em 0;
+        }
+      }
+
+      .es_lablebox {
+        padding-bottom:0;
+      }
+
+      div.es_textbox {
+        input {
+          border:0;
+          background:$gray-lighter;
+          text-align: center;
+          border-bottom: 0.5em solid $gray-light;
+          border-radius:0.5em 0 0 0.5em;
+
+          @media (max-width:$screen-sm) {
+            border-radius:0 0 0 0.5em ;
+          }
+        }
       }
     }
     
@@ -104,20 +150,46 @@
       height:100%;
     }
 
-    a.btn {
+    .es_textbox_button {
       height:100%;
       border-radius: 0;
       border:0;
-      border-bottom: 0.5em solid $primary;
+      border-bottom: 0.5em solid $green + 50;
       padding: 1em;
       text-transform: uppercase;
-      background:$primary +50;
-      transition: 0.1s all;
+      background:$green;
+      color:white;
+      transition:0.2s all;
+
+      &:hover {
+        background:$green + 30;
+        transition:0.2s all;
+      }
 
       &:active {
-        transition: 0.1s all;
-        padding-top: 1.5em;
-        border-bottom: 0.01em solid $primary;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); 
+      }
+    }
+
+    a {
+      color:$gray-darker;
+      background:$primary +50;
+      border-bottom: 0.5em solid $primary;
+      border-radius:0.5em;
+
+      @extend .es_textbox_button;
+      
+      @media (max-width:$screen-sm) {
+        border-radius:0.5em 0.5em 0 0;
+      }
+
+      @media (min-width:$screen-sm) {
+        line-height: 180%;
+      }
+
+      &:hover {
+        background:$primary + 60;
+        transition:0.2s all;
       }
     }
   }

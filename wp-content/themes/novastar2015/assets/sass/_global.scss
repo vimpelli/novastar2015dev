@@ -14,6 +14,31 @@
 
 /*==========  ELEMENTS  ==========*/
 
+/* Fix the way the related post plugin looks */
+
+.div-list {
+	div.rltdpstsplgn_content {
+		position: relative;
+		padding-left: 2.5em;
+		margin-right: 2em;
+		height:1.5em;
+		overflow: hidden;
+		h3 {
+			display: list-item;
+			font-weight: 400;
+			color:$primary;
+			margin:0;
+			font-size: 1em;
+			font-family: Lato;
+			line-height: 1.5em;
+			@include mylist($secondcolor);
+		}
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+
 div.mod-time {
 	background:red;
 	padding: 0.5em;

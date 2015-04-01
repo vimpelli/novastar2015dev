@@ -24,7 +24,7 @@ header.navbar {
 	margin-bottom: 5em;
 	border-bottom: $nav-height/10 solid $primary;
 
-	a, .header-left p {
+	a, .header-left {
 		@if $dark {
 			color:$gray-lighter !important; 
 		}
@@ -41,15 +41,10 @@ header.navbar {
 }
 
 .header-left {
-	div {
-		margin:auto;
-	}
-
-	p {
-		line-height: $nav-height;
-		vertical-align: middle;
-		margin:0;
-	}
+	margin:auto;
+	line-height: $nav-height;
+	vertical-align: middle;
+	margin:0;
 }
 
 // THE LOGO CONTAINER AND LOGO
@@ -160,6 +155,12 @@ $menu-color:$primary;
 				line-height: 20px;
 				padding:10px 15px;
 				display:block;
+			}
+
+			@media (min-width:$screen-lg) {
+				li:last-child a {
+					padding-bottom: 20px;
+				}
 			}
 		}
 	}

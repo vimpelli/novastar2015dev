@@ -58,12 +58,12 @@
 
 			&.first {
 				color:$gray-darker;
-				background:$green-hover;
+				background:$green;
 				border-color:$gray-darker;
 				margin-right: 1em;
 
 				&:hover {
-					background:$green;
+					background:$green-hover;
 				}
 			}
 		}

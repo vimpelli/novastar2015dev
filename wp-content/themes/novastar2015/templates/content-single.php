@@ -41,9 +41,9 @@
         </div>
 
         <div class="col-sm-6 subscribe">
-          <input type="email" name="" id="input" class="form-control" value="YOUR EMAIL ADDRESS HERE" required="required" title="">
-          <a href="<?php echo get_category_link($category[0]); ?>" type="button" class="btn btn-default">SUBSCRIBE</a>
+          <?php dynamic_sidebar('email-signup' ); ?>
         </div>
+
       </aside>
     </div>
       <?php endwhile; ?>

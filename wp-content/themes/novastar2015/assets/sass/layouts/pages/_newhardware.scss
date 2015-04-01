@@ -65,7 +65,7 @@ $product-height:12em;
 
 		.product-description {
 			@media (min-width:$screen-sm) {
-				height: $product-height/2;
+				height: $product-height;
 			}
 		}
 

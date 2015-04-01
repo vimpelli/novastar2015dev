@@ -70,7 +70,8 @@ ol.breadcrumb {
 
   .heading {
     padding:0.5em;
-    margin-bottom: 1em;
+    margin:0;
+    margin-bottom: 1rem;
     background:$secondcolor;
     color:$gray-lighter;
   }
@@ -123,11 +124,17 @@ li.well {
   }
 
   ul {
+    @media(min-width:$screen-lg) {
+      display: flex;
+    }
     text-align: center;
     padding:0;
     margin:0;
   }
   li {
+    @media(min-width:$screen-lg) {
+      flex:1;
+    }
     margin-right:0.3em;
     display: inline-block;
     text-align: center;
