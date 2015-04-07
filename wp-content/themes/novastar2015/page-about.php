@@ -13,16 +13,25 @@
 		
 			<div class="row logo-row">
 				<div class="col-xs-6 col-sm-6 col-md-3 logo">
-					<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
+					<?php if(get_field('logo_1_link')): ?><a target=_blank href="<?php the_field('logo_1_link'); ?>"><?php endif; ?>
+						<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
+					</a>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 logo">
-					<img class="img-responsive" src="<?php the_field('logo_2'); ?>">
+					<?php if(get_field('logo_2_link')): ?><a target=_blank href="<?php the_field('logo_2_link'); ?>"><?php endif; ?>
+						<img class="img-responsive" src="<?php the_field('logo_2'); ?>">
+					</a>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 logo">
-					<img class="img-responsive" src="<?php the_field('logo_3'); ?>">
+					<?php if(get_field('logo_3_link')): ?><a target=_blank href="<?php the_field('logo_3_link'); ?>"><?php endif; ?>
+						<img class="img-responsive" src="<?php the_field('logo_3'); ?>">
+					</a>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 logo">
-					<img class="img-responsive" src="<?php the_field('logo_4'); ?>">
+					<?php if(get_field('logo_4
+					_link')): ?><a target=_blank href="<?php the_field('logo_4_link'); ?>"><?php endif; ?>
+						<img class="img-responsive" src="<?php the_field('logo_4'); ?>">
+					</a>
 				</div>
 			</div>
 
@@ -33,8 +42,5 @@
 		</div>
 	</div>
 </div>
-
-
-
 
 <?php endwhile; ?>

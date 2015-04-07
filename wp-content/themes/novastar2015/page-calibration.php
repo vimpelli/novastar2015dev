@@ -69,7 +69,7 @@
 		</div>
 		<div class="col-sm-12 col-md-6 info">	
 			<p><?php the_field('section_5_body'); ?></p>
-			<a href="<?php the_field('section_5_button_link'); ?>" target=_blank type="button" class="btn btn-md btn-success">Learn More <i class="fa fa-file-pdf-o"></i></a>
+			<a href="<?php the_field('section_5_button_link'); ?>" type="button" class="btn btn-md btn-success">Learn More</a>
 		</div>
 		<div class="col-sm-6">
 			<a target=_blank href="<?php the_field('section_5_image_link'); ?>"><img src="<?php the_field('section_5_image'); ?>" class="img-responsive" alt="Image"></a>

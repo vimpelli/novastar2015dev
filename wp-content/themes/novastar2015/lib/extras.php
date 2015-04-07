@@ -77,8 +77,8 @@ $args = array(
     'name'          => __( 'Page Sidebar'),
     'description'   => 'This widget area is for use on a page.',
     'class'         => 'page-sidebar',
-    'before_widget' => '',
-    'after_widget'  => '',
+    'before_widget' => '<div class="">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
 );
@@ -197,4 +197,3 @@ function editglobaloptions() {
     </div>
     <?php
 }
-

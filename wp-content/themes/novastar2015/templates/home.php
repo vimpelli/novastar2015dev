@@ -17,7 +17,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_1_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/calibration"></a>
+				<a href="<?php echo home_url(); ?>/?p=10"></a>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
@@ -29,7 +29,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_2_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/new-hardware"></a>
+				<a href="<?php echo home_url(); ?>/?p=12"></a>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
@@ -41,7 +41,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_3_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/software"></a>
+				<a href="<?php echo home_url(); ?>/?p=14"></a>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
@@ -53,7 +53,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_4_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/it-services"></a>
+				<a href="<?php echo home_url(); ?>/?p=131"></a>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
@@ -65,7 +65,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_5_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/re-marketing"></a>
+				<a href="<?php echo home_url(); ?>/?p=18"></a>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
@@ -77,8 +77,7 @@ Template Name: Home Page Layout
 						<p><?php the_field('box_6_sub'); ?></p>
 					</figcaption>
 				</figure>
-				<a href="<?php echo home_url(); ?>/refurbished
-					-sales"></a>
+				<a href="<?php echo home_url(); ?>/?p=20"></a>
 			</div>
 		</div>
 	</div> <!-- row home hero -->
@@ -123,7 +122,7 @@ Template Name: Home Page Layout
 			   	<?php endif; ?>
 
 			    <div class="news <?php if(!get_field('home_news_img')){ echo 'col-sm-12'; } else { echo 'col-sm-6 col-md-8'; } ?>">
-			    	<h3><?php the_title(); ?></h3> 
+			    	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 			    	<?php the_excerpt(); ?>
 			   	</div>
 

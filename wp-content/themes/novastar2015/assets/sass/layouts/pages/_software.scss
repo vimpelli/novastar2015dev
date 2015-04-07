@@ -63,12 +63,8 @@
 		}
 
 		div.centered-img {
-			top:60%;
+			top:50%;
 			position: relative;
-
-			@media (max-width:$screen-md) {
-				top:50%;
-			}
 
 			img {
 				position: absolute;

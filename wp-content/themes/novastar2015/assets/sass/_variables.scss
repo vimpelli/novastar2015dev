@@ -61,6 +61,10 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$btn-default-color:              $primary;
+$btn-default-bg:                 $gray-lighter + 20;
+$btn-default-border:             $gray-light;
+
 
 /* TYPOGRAPHY
 ---------------------------------------- */

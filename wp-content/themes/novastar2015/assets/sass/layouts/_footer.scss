@@ -170,7 +170,7 @@
 		padding-left:1em;
 			li {
 				line-height: 1.5em;
-				@include mylist($primary)
+				@include mylist($primary);
 			}
 		}
 		.post-date {
@@ -200,6 +200,7 @@ footer {
 		font-weight:lighter;
 		vertical-align:middle;
 		padding-bottom: 2em;
+		font-size: 1em;
 
 		img {
 			vertical-align: inherit;

@@ -7,7 +7,7 @@
 		</div>
 	</div>
 	<ul class="row products-listing section">
-		<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<li class="col-xs-12 col-sm-6 col-md-4">
 			<article>
 				<div class="img-container">
 					<img class="img img-responsive" src="<?php the_field('product_1_image'); ?>">
@@ -19,7 +19,7 @@
 				<?php endif; ?>
 			</article>
 		</li>
-		<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<!-- <li class="col-xs-12 col-sm-6 col-md-4">
 			<article>
 				<div class="img-container">
 					<img class="img img-responsive" src="<?php the_field('product_2_image'); ?>">
@@ -30,8 +30,8 @@
 					<a href="<?php the_field('product_2_link'); ?>"type=button class="btn btn-success btn-block">Learn More</a>
 				<?php endif; ?>
 			</article>
-		</li>
-		<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		</li> -->
+		<li class="col-xs-12 col-sm-6 col-md-4">
 			<article>
 				<div class="img-container">
 					<img class="img img-responsive" src="<?php the_field('product_3_image'); ?>">
@@ -43,7 +43,7 @@
 				<?php endif; ?>
 			</article>
 		</li>
-		<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<li class="col-xs-12 col-sm-6 col-md-4">
 			<article>
 				<div class="img-container">
 					<img class="img img-responsive" src="<?php the_field('product_4_image'); ?>">

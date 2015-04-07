@@ -74,6 +74,7 @@ $height: 25em;
     background-image: url(#{$theme-img-root}grid.png);
     border-top:0.4em solid $primary;
     border-bottom:0.8em solid $primary - 30;
+    height:$height;
 
     @media (max-width:$screen-lg) and (min-width:$screen-md){
       height:$height;
@@ -109,11 +110,13 @@ $height: 25em;
     }
 
     div.img-wrapper {
-      max-height: $height/2;
+      height: $height/2;
       overflow: hidden;
     }
 
     img {
+      width:100%;
+      min-height:$height/2;
       filter:grayscale(80%);
       transition: 0.5s all;
     }
