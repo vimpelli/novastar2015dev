@@ -2,7 +2,7 @@
 ---------------------------------------- */
 $nav-height: 4.5em;
 $nav-padding: $nav-height / 8;
-
+$menu-color:$primary;
 $dark: true;
 
 $nav-background:$gray-lighter; 
@@ -36,11 +36,12 @@ header.navbar {
 .header_flex_child {
 	position: relative;
 	display:inline-block;
-	width:(100% / 3);
+	// min-width:(100% / 3);
 	float:left;
 }
 
 .header-left {
+	width:40%;
 	margin:auto;
 	line-height: $nav-height;
 	vertical-align: middle;
@@ -49,6 +50,7 @@ header.navbar {
 
 // THE LOGO CONTAINER AND LOGO
 .logo-container {
+	width:20%;
 	img {
 		width:260px;
 		position: relative;
@@ -63,10 +65,9 @@ header.navbar {
 }
 
 
-$menu-color:$primary;
-
 // MAIN NAV CONTAINER
 .main-nav {
+	width:40%;
 
 	// MAIN NAV UL
 	ul.nav {
@@ -76,17 +77,39 @@ $menu-color:$primary;
 
 		// MAIN NAV ITEMS
 		> li {
-			width:24%;
-			padding:0 5px;
+			padding:0;
 			position: relative;
 			display: inline-block;
 			box-sizing:border-box;
 			line-height: $nav-height;
+			
+			/* Set sizes for different numbers of menu items */
+			@media (min-width:$screen-sm) {
+				
+				&.six {
+					width:(100%/6)- 1;
+				}
+				&.five {
+					width:(100%/5)- 1;
+				}
+				&.four {
+					width:(100%/4)- 1;
+				}
+				&.three {
+					width:(100%/3)- 1;
+				}
+				&.two {
+					width:(100%/2)- 1;
+				}
+			}
+			
+			@media (min-width:$screen-lg) and (max-width:1470px) {
+				text-align: right;
+			}
 
 			a {	
 				width:100%;
 				flex:1;
-				// line-height: $nav-height - 7px;
 				text-transform: uppercase;
 				color:$secondcolor;
 				white-space: nowrap;
@@ -150,7 +173,6 @@ $menu-color:$primary;
 			a {
 				min-width: 200px;
 				margin:0;
-				// font-weight: 300;
 				text-align: left;
 				line-height: 20px;
 				padding:10px 15px;
@@ -208,19 +230,15 @@ header.navbar {
 	}
 	// MAIN NAV UL FOR MOBILE
 	ul.nav {
-
-		li {
-			width:180px;
-		}
-
 		ul.dropdown-menu {
-			left:0;
-			width:100% !important;
+			text-align: center;
+			min-width:100% !important;
 			min-width:150px;
 			border:none;
-			border-bottom:5px solid $secondcolor;
+			border-bottom:5px solid $menu-color;
 
 			a {
+				// width:100%;
 				line-height: $nav-height * 0.7;
 				min-width:0;
 				padding:0;
@@ -253,24 +271,9 @@ header.navbar {
 				display: block;
 			}
 
-			li:nth-child(2n+0) {
+			li:nth-child(2n+1) {
 				background:$nav-background - 30;
 			}
 		}
 	}
-
 }
-
-// @media (max-width:800px) { 
-
-// .logo-container {
-// 	padding-bottom: 30px;
-	
-// 	img {
-// 		margin:auto;
-// 		position: relative;
-// 		z-index: 1;
-// 	}
-// }
-
-// }

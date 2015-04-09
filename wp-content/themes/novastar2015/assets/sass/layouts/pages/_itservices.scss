@@ -7,6 +7,19 @@
 			padding: 1em 1em 3em 1em;
 			border-bottom: 1em solid $primary;
 			margin-bottom: 2em;
+
+			@media (min-width:$screen-lg + 1) {
+				height:15em;
+			}
+			@media (max-width:$screen-lg) {
+				height:20em;
+			}
+			@media (max-width:$screen-md) {
+				height:30em;
+			}
+			@media (max-width:$screen-sm) {
+				height:auto;
+			}
 		}
 	}
 
@@ -26,7 +39,6 @@
 
 		.stage {
 			margin-top: 1.5em;
-			text-align: right;
 
 			h3 {
 				color:$secondcolor;
@@ -42,7 +54,7 @@
 			}
 
 			ul {
-				padding:0;
+				// padding:0;
 				margin-bottom: 2em;
 
 				li {

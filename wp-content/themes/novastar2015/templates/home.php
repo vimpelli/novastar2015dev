@@ -123,7 +123,15 @@ Template Name: Home Page Layout
 
 			    <div class="news <?php if(!get_field('home_news_img')){ echo 'col-sm-12'; } else { echo 'col-sm-6 col-md-8'; } ?>">
 			    	<h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
-			    	<?php the_excerpt(); ?>
+
+			    	<?php // Display special excerpt if it exists, else, show the post excerpt.
+			    	if(get_field('homepage_hero_excerpt')) { 
+			    		the_field('homepage_hero_excerpt');
+			    	} else {
+			    		the_excerpt(); 
+			    	}
+			    	?>
+
 			   	</div>
 
 			<?php endif; ?>
@@ -141,6 +149,7 @@ Template Name: Home Page Layout
 	  
 		<a href=".
 
+
 		/category/news/"><p class="news-more">More News</p></a>
 	</div>
 
@@ -150,12 +159,12 @@ Template Name: Home Page Layout
 <div class="video-wrapper wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5 video-info">
+			<div class="col-md-5 video-info">
 				<h1 class="title"><?php the_field('video_headline'); ?></h1>
 				<p><?php the_field('video_desc'); ?></p>
 				<button type="button" class="btn btn-default">Contact Us</button>
 			</div>
-			<div class="col-sm-7 inner">
+			<div class="col-md-7 inner">
 				<div class="embed-responsive embed-responsive-16by9">
   					<iframe class="embed-responsive-item" src="<?php the_field('video_url'); ?>"></iframe>
 				</div>

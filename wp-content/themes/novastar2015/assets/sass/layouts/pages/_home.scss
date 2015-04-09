@@ -204,6 +204,11 @@ $height: 25em;
 /*==========  NEWS HERO SECTION  ==========*/
 
 .news-hero {
+
+  @media (min-width:$screen-sm) {
+    display: flex;
+  }
+  
   position: relative;
   padding:2em 1em;
   position: relative;
@@ -212,17 +217,17 @@ $height: 25em;
   border-right: 5px solid $primary;
   background:$primary + 80;
 
-  @media (min-width:$screen-md) {
-    height:15em;
-  }
+  // @media (min-width:$screen-md) {
+  //   height:15em;
+  // }
   
-  @media (min-width:$screen-sm) and (max-width:$screen-md - 1 ) {
-    height:30em;
-  }
+  // @media (min-width:$screen-sm) and (max-width:$screen-md - 1 ) {
+  //   height:30em;
+  // }
 
-  @media (min-width:$screen-xs) and (max-width:$screen-sm - 1) {
-    height:auto;
-  }
+  // @media (min-width:$screen-xs) and (max-width:$screen-sm - 1) {
+  //   height:auto;
+  // }
 
   .news-title {
     position: absolute;
@@ -253,7 +258,10 @@ $height: 25em;
   }
 
   .news-image {
-    height:100%;
+    @media (min-width:$screen-sm) {
+      flex:1;
+    }
+    // background:red;
     img {
       display: block;
       height:auto;
@@ -285,26 +293,22 @@ $height: 25em;
   color:$gray-lighter;
   
   .inner {
+    height:100%;
 
     .video {
       height:auto;
       width:100%;
-
-       img {
-          width:100%;
-          height:auto;
-       }
     }
   }
 
   .video-info {
-    @media (min-width:$screen-sm) { // Centers vertically
+    @media (min-width:$screen-md) { // Centers vertically
       padding-top:25%;
       margin-bottom: -25%;
       transform:translateY(-37%);
     }
 
-    @media (max-width:$screen-sm - 1px) {
+    @media (max-width:$screen-md - 1px) {
       width:80%;
       margin:0 auto 1em auto;
       text-align: center;
@@ -321,7 +325,7 @@ $height: 25em;
     margin-top: 2em;
     margin-bottom: 2em;
 
-    @media (max-width:$screen-sm) {
+    @media (max-width:$screen-md) {
       margin:2em auto;
     }
   }

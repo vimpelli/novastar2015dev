@@ -47,24 +47,29 @@ $red:             #D48989;
 $secondcolor:     #243772; // darker blue
 $thirdcolor:      #171D2F; // darkest blue
 $cta:             #B0FCC1; // light green
-$info:            #5bc0de; // 
-$warning:         #f0ad4e;
+$info:            #ecb31b; // 
+$warning:         $red;
 $danger:          #d9534f;
 $breadcrumb-bg:   $gray-lighter + 10;
 
 $linkedin:        #0976b4;
 $twitter:         #55acee;
 
+/*==========  Buttons  ==========*/
+
 $brand-primary:         $cta - 80; // We're using this for the call to action color
 $brand-success:         $green !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-info:            $info !default;
+$brand-warning:         $warning !default;
+$brand-danger:          $danger !default;
 
 $btn-default-color:              $primary;
 $btn-default-bg:                 $gray-lighter + 20;
 $btn-default-border:             $gray-light;
 
+$btn-info-color:                 #000 !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                lighten($btn-info-bg, 5%) !default;
 
 /* TYPOGRAPHY
 ---------------------------------------- */
