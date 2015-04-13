@@ -36,7 +36,6 @@ header.navbar {
 .header_flex_child {
 	position: relative;
 	display:inline-block;
-	// min-width:(100% / 3);
 	float:left;
 }
 
@@ -46,6 +45,67 @@ header.navbar {
 	line-height: $nav-height;
 	vertical-align: middle;
 	margin:0;
+	// padding-left: 2%;
+	height:100%;
+
+	.header-search {
+		position: relative;
+		width:60%;
+		display: inline-block;
+		float: left;
+		transform:translateY(55%);
+		padding-left:2em;
+
+		@media (max-width:$screen-lg) {
+			padding:0 10%;
+			width:100%;
+		}
+
+		input.search-field {
+			background:$nav-background +20;
+			text-transform: uppercase;
+			border:0;
+			height:100%;
+			display: inline-block;
+			width:80% !important;
+			border-radius:0.5em 0 0 0.5em;
+		}
+
+		::-webkit-input-placeholder {
+		   color: $primary;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $primary;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $primary;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $primary;  
+		}
+
+		button.search-submit {
+			background:$nav-background +20;
+			float: left;
+			height:100%;
+			border:0;
+			border-left: 1px solid $nav-background;
+			border-radius:0;
+			display: inline-block;
+			width:20%;
+			border-radius:0 0.5em 0.5em 0;
+		}
+	}
+
+	p.phone {
+		width:40%;
+		display: inline-block;
+		float: left;
+		margin-bottom: 0;
+	}
 }
 
 // THE LOGO CONTAINER AND LOGO

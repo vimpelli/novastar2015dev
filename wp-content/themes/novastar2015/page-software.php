@@ -30,7 +30,7 @@
 			<h3><?php the_field('sl1_description_heading'); ?></h3>
 			<p><?php the_field('sl1_description'); ?></p>
 			<?php if(get_field('sl1_button_link')): ?>
-				<button type="button" class="btn btn-success btn-block">Learn More</button>
+				<a href="<?php the_field('sl1_button_link'); ?>" type="button" class="btn btn-success btn-block">Learn More</a>
 			<?php endif; ?>
 		</article>
 	</div>
@@ -50,7 +50,7 @@
 			<h3><?php the_field('sl2_description_heading'); ?></h3>
 			<p><?php the_field('sl2_description'); ?></p>
 			<?php if(get_field('sl2_button_link')): ?>
-				<button type="button" class="btn btn-success btn-block">Learn More</button>
+				<a href="<?php the_field('sl2_button_link'); ?>" class="btn btn-success btn-block">Learn More</a>
 			<?php endif; ?>
 		</article>
 
@@ -63,7 +63,7 @@
 			<h3><?php the_field('sl3_description_heading'); ?></h3>
 			<p><?php the_field('sl3_description'); ?></p>
 			<?php if(get_field('sl3_button_link')): ?>
-				<button type="button" class="btn btn-success btn-block">Learn More</button>
+				<a href="<?php the_field('sl3_button_link'); ?>" class="btn btn-success btn-block">Learn More</a>
 			<?php endif; ?>
 		</article>
 	</div>

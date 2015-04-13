@@ -162,7 +162,7 @@ Template Name: Home Page Layout
 			<div class="col-md-5 video-info">
 				<h1 class="title"><?php the_field('video_headline'); ?></h1>
 				<p><?php the_field('video_desc'); ?></p>
-				<button type="button" class="btn btn-default">Contact Us</button>
+				<a href="<?php the_field('video_contact_link'); ?>" type="button" class="btn btn-default">Contact Us</a>
 			</div>
 			<div class="col-md-7 inner">
 				<div class="embed-responsive embed-responsive-16by9">

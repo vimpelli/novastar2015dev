@@ -311,7 +311,10 @@ $height: 25em;
     @media (max-width:$screen-md - 1px) {
       width:80%;
       margin:0 auto 1em auto;
-      text-align: center;
+
+      h1, button {
+        text-align: center;
+      }
     }
   }
 
@@ -319,9 +322,9 @@ $height: 25em;
     line-height: 1.2em;
   }
 
-  button {
+  a.btn {
     display: block;
-    width:50%;
+    width:70%;
     margin-top: 2em;
     margin-bottom: 2em;
 

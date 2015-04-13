@@ -1,6 +1,6 @@
 <header class="navbar navbar-static-top" role="banner">
 
-		<div class="visible-lg"><div class="header_flex_child header-left"><?php echo get_option('phonenumber' ); ?></div></div>
+		<div class="header_flex_child header-left"><?php simplesearchform('header-search'); ?><div class="visible-lg"><p class="phone"><?php echo get_option('phonenumber'); ?></p></div></div>
 
 		<a class="logo-container header_flex_child" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_home_url() . "/wp-content/uploads/logoWH72.png" ?>"/></a>
 		

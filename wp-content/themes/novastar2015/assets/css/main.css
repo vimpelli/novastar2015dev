@@ -5056,7 +5056,54 @@ header.navbar {
   margin: auto;
   line-height: 4.5em;
   vertical-align: middle;
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
+  .header-left .header-search {
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    float: left;
+    -webkit-transform: translateY(55%);
+        -ms-transform: translateY(55%);
+            transform: translateY(55%);
+    padding-left: 2em; }
+    @media (max-width: 1340px) {
+      .header-left .header-search {
+        padding: 0 10%;
+        width: 100%; } }
+    .header-left .header-search input.search-field {
+      background: #384b86;
+      text-transform: uppercase;
+      border: 0;
+      height: 100%;
+      display: inline-block;
+      width: 80% !important;
+      border-radius: 0.5em 0 0 0.5em; }
+    .header-left .header-search ::-webkit-input-placeholder {
+      color: #89A4D4; }
+    .header-left .header-search :-moz-placeholder {
+      /* Firefox 18- */
+      color: #89A4D4; }
+    .header-left .header-search ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #89A4D4; }
+    .header-left .header-search :-ms-input-placeholder {
+      color: #89A4D4; }
+    .header-left .header-search button.search-submit {
+      background: #384b86;
+      float: left;
+      height: 100%;
+      border: 0;
+      border-left: 1px solid #243772;
+      border-radius: 0;
+      display: inline-block;
+      width: 20%;
+      border-radius: 0 0.5em 0.5em 0; }
+  .header-left p.phone {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0; }
 
 .logo-container {
   width: 20%; }
@@ -5742,17 +5789,18 @@ li.well {
   @media (max-width: 1022px) {
     .video-wrapper .video-info {
       width: 80%;
-      margin: 0 auto 1em auto;
-      text-align: center; } }
+      margin: 0 auto 1em auto; }
+      .video-wrapper .video-info h1, .video-wrapper .video-info button {
+        text-align: center; } }
   .video-wrapper p.lead {
     line-height: 1.2em; }
-  .video-wrapper button {
+  .video-wrapper a.btn {
     display: block;
-    width: 50%;
+    width: 70%;
     margin-top: 2em;
     margin-bottom: 2em; }
     @media (max-width: 1023px) {
-      .video-wrapper button {
+      .video-wrapper a.btn {
         margin: 2em auto; } }
   .video-wrapper .title {
     color: #e3e3e3; }
@@ -5874,6 +5922,48 @@ li.well {
       height: 12em; } }
   .new-hardware article button {
     margin: 2em 0; }
+
+/*==========  HP Page  ==========*/
+.hpproduct {
+  margin-top: 2em; }
+  .hpproduct figure {
+    background: red;
+    height: 20em;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 0.5em solid #243772; }
+    .hpproduct figure p.lead {
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      padding: 1em;
+      top: 0;
+      position: absolute;
+      color: #303030; }
+      @media (min-width: 1023px) and (max-width: 1340px) {
+        .hpproduct figure p.lead {
+          font-size: 2em; } }
+      .hpproduct figure p.lead:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.5); }
+    .hpproduct figure a {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 75%;
+      text-align: center;
+      z-index: 10;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
 
 /*==========  IT SERVICES PAGE  ==========*/
 .itservices .section div.info {

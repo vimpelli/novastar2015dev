@@ -6,7 +6,6 @@
 				<?php dynamic_sidebar('footer' ); ?>
 			</div>
 		</div>
-		
 	</div>
 </div>
 <?php endif; ?>

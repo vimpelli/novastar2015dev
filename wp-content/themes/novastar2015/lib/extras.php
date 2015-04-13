@@ -39,7 +39,7 @@ register_sidebar( $args );
 
 $args = array(
     'name'          => __( 'Pre Footer'),
-    'description'   => 'This is the area directly above the footer.',
+    'description'   => 'This is the area directly above the footer. Only displays on the home page',
     'class'         => 'pre-footer-widgets',
     'before_widget' => '<div class="light-text widget %2$s">',
     'after_widget'  => '</div>',
@@ -196,4 +196,39 @@ function editglobaloptions() {
     </form>
     </div>
     <?php
+}
+
+function simplesearchform($classes) {
+    ?>
+    <form class="input-group <?php echo $classes ?>">
+        <input type="search" value="<?php echo get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>" required>
+        <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
+    </form>
+    <?php
+}
+
+function parentbutton() { /*==========  GET PARENT PAGE BUTTON  ==========*/
+
+    /* get id of current page */
+    $pageid = get_the_id();
+
+    /* get id of parent page */
+    $parent = get_post_ancestors( $post->ID );
+
+    $id = ($parent) ? $parent[count($parent)-1]: $post->ID;
+
+    /* set variable for link to parent page */
+    $permalink = get_permalink($id);
+
+    /* set variable for title of parent page */
+    $title = get_the_title($id);
+
+    /* if the two id variables are not equal, display button to parent page */
+    if ($id != $pageid) {
+
+        $parentbutton = '<br><a type="button" class="btn btn-default btn-block btn-md" href="' .$permalink. '">Back to ' .$title. '</a>';
+
+    } 
+
+    echo $parentbutton;
 }
