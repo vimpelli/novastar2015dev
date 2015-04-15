@@ -12,6 +12,10 @@
   }
 }
 
+@mixin pattern() {
+	background-image:url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png);
+}
+
 /*==========  ELEMENTS  ==========*/
 
 /* Fix the way the related post plugin looks */
@@ -52,6 +56,19 @@ div.mod-time {
 img {
 	max-width:100%;
 	height:auto;
+}
+
+@mixin img-wrap($direction, $width) {
+	padding:0 2em 2em 2em;
+	float:$direction;
+	max-width:$width;
+
+	@media (max-width:$screen-md) {
+		max-width: $width * 1.3;
+	}
+	@media (max-width:$screen-xs) {
+		max-width: $width * 1.8;
+	}
 }
 
 .wrap {
@@ -173,7 +190,14 @@ h3 {
 }
 
 h4 {
+	font-family: Lato, sans-serif;
 	font-size: 1.8em;
+	font-weight: 700;
+}
+
+h5 {
+	font-family: Lato, sans-serif;
+	font-style: 5em;
 }
 
 a,li,button {

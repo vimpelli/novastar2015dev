@@ -226,7 +226,7 @@ function parentbutton() { /*==========  GET PARENT PAGE BUTTON  ==========*/
     /* if the two id variables are not equal, display button to parent page */
     if ($id != $pageid) {
 
-        $parentbutton = '<br><a type="button" class="btn btn-default btn-block btn-md" href="' .$permalink. '">Back to ' .$title. '</a>';
+        $parentbutton = '<br><a type="button" class="btn btn-default btn-block btn-md" href="' .$permalink. '">Back to ' .$title. '</a><br>';
 
     } 
 

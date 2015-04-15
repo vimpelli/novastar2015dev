@@ -188,5 +188,3 @@ Template Name: Home Page Layout
 		</div>
 	</div>
 </div>
-
-
