@@ -8,5 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+	<!-- <script src="//vjs.zencdn.net/4.12/video.js"></script>
+	<link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet"> -->
 	<?php wp_head(); ?>
 </head>

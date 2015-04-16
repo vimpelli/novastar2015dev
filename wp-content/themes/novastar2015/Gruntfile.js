@@ -20,6 +20,7 @@ module.exports = function(grunt) {
     //'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
     //'assets/js/plugins/*.js',
     //'assets/js/_*.js'
+    'assets/js/plugins/video-js/video.js'
   ];
 
   grunt.initConfig({

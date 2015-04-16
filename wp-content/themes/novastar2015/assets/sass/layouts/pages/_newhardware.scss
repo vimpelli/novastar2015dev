@@ -13,17 +13,6 @@ $product-height:12em;
 		margin-bottom: 2em;
 		border-radius: 1em;
 		border-bottom: 1em solid $primary;
-
-		@media (max-width:$screen-lg) {
-			// height:$product-height;
-		}
-		@media (max-width:$screen-md) {
-			// height:$product-height;
-		}
-		@media (min-width:$screen-sm) {
-			// height:$product-height;
-		}
-
 		background:$gray-lighter;
 		padding:2em;
 
@@ -40,8 +29,6 @@ $product-height:12em;
 				transform: translate(-50%,-50%);
 			}
 		}
-
-		
 
 		.product-title { 
 			font-size: 1.2em;
@@ -65,15 +52,12 @@ $product-height:12em;
 
 		.product-description {
 			@media (min-width:$screen-sm) {
-				height: $product-height * 0.7;
+				height: $product-height;
 			}
-		}
-
-		button {
-			margin:2em 0;
 		}
 	}
 }
+/* - - - - - - - - - - - - - - - - - - - - */
 
 /*==========  HP Page  ==========*/
 .hppage-wrapper {
@@ -153,9 +137,13 @@ $product-height:12em;
 		}
 	}
 }
+/* - - - - - - - - - - - - - - - - - - - - */
 
+/*==========  CubePro Page  ==========*/
 
-
+.cubepro {
+	margin-top: -5.5em;
+}
 
 
 
