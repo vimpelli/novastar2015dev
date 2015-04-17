@@ -21,8 +21,8 @@ Template Name: HP Page Layout
 
 	<div class="row section">
 		<div class="col-sm-12">
-			<img class="img partner img-responsive"src="http://192.169.219.222/~novastar/wp-content/uploads/HP_Gold_Partner_Insignia.png">
-			<?php the_content();?>
+			<img class="img partner img-responsive"src="<?php the_field('partner_logo'); ?>">
+			<?php the_field('section_1'); ?>
 		</div>
 	</div>
 
@@ -32,30 +32,30 @@ Template Name: HP Page Layout
 	<div class="container hppage">
 		<div class="row hpproducts">
 			<div class="col-sm-12 title">
-				<h1 class="title">Novastar HP Product Line</h1>
+				<h1 class="title"><?php the_field('product_section_title'); ?></h1>
 			</div>
 			<div class="col-sm-6 col-lg-3 hpproduct">
-				<figure style="background-image:url(http://192.169.219.222/~novastar/wp-content/uploads/workstation.jpg);">
-					<p class="lead">HP Workstations, Desktops, Laptops, Notebooks<span class="sub">For all your computing needs.</span></p>
-					<a class="btn btn-info" href="#">Learn More</a>
+				<figure style="background-image:url(<?php the_field('t1_image'); ?>);">
+					<p class="lead"><?php the_field('t1_title'); ?><span class="sub"><?php the_field('t1_sub'); ?></span></p>
+					<a class="btn btn-info" href="<?php the_field('t1_link'); ?>">Learn More</a>
 				</figure>
 			</div>
 			<div class="col-sm-6 col-lg-3 hpproduct">
-				<figure style="background-image:url(http://192.169.219.222/~novastar/wp-content/uploads/hpstorage.jpg);">
-					<p class="lead">HP Servers, Storage & Networking<span class="sub">A network you can be proud of.</span></p>
-					<a class="btn btn-info" href="#">Learn More</a>
+				<figure style="background-image:url(<?php the_field('t2_image'); ?>);">
+					<p class="lead"><?php the_field('t2_title'); ?><span class="sub"><?php the_field('t2_sub'); ?></span></p>
+					<a class="btn btn-info" href="<?php the_field('t2_link'); ?>">Learn More</a>
 				</figure>
 			</div>
 			<div class="col-sm-6 col-lg-3 hpproduct">
-				<figure style="background-image:url(http://192.169.219.222/~novastar/wp-content/uploads/hpprinter.jpg);">
-					<p class="lead">HP Printers<span class="sub">A printer you can be proud of.</span></p>
-					<a class="btn btn-info" href="#">Learn More</a>
+				<figure style="background-image:url(<?php the_field('t3_image'); ?>);">
+					<p class="lead"><?php the_field('t3_title'); ?><span class="sub"><?php the_field('t3_sub'); ?></span></p>
+					<a class="btn btn-info" href="<?php the_field('t3_link'); ?>">Learn More</a>
 				</figure>
 			</div>
 			<div class="col-sm-6 col-lg-3 hpproduct">
-				<figure style="background-image:url(http://192.169.219.222/~novastar/wp-content/uploads/workstation.jpg);">
-					<p class="lead">HP Mobility<span class="sub">Products for mobility in the workplace.</span></p>
-					<a class="btn btn-info" href="#">Learn More</a>
+				<figure style="background-image:url(<?php the_field('t4_image'); ?>);">
+					<p class="lead"><?php the_field('t4_title'); ?><span class="sub"><?php the_field('t4_sub'); ?></span></p>
+					<a class="btn btn-info" href="<?php the_field('t4_link'); ?>">Learn More</a>
 				</figure>
 			</div>
 		</div>
@@ -63,7 +63,7 @@ Template Name: HP Page Layout
 </div>
 	
 <div class="container hppage">
-	<div class="row section">
+	<div class="row section divider">
 		<div class="col-sm-12 title">
 				<h1 class="title">HP Product Videos</h1>
 			</div>
@@ -78,13 +78,38 @@ Template Name: HP Page Layout
 			</div>
 		</div>
 	</div>
+
+	<!-- <?php print_r( $title = wp_get_attachment(get_field('sheet_2'))); ?> -->
+	
+	<!-- <div class="row datasheets section">
+		<div class="col-sm-12">
+			<h2>Data Sheets</h2>
+		</div>
+		<div class="col-sm-3">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_1'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_1'))['title']; ?></p>
+		</div>
+		<div class="col-sm-3">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_2'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_2'))['title']; ?></p>
+		</div>
+		<div class="col-sm-3">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_3'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_3'))['title']; ?></p>
+		</div>
+		<div class="col-sm-3">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_4'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_4'))['title']; ?></p>
+		</div>
+	</div> -->
+
+
 	<div class="row section">
 		<div class="col-sm-12">
 			<?php parentbutton(); ?>
 		</div><!-- parent page button -->
 	</div>
 </div>
-
 
 <?php endwhile; ?>
 <?php endif; ?> 

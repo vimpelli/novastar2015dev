@@ -92,7 +92,6 @@ $product-height:12em;
 
 	figure {
 		border-radius:1em;
-		background:red;
 		height: 20em;
 		position: relative;
 		background-size:cover;
@@ -137,12 +136,73 @@ $product-height:12em;
 		}
 	}
 }
+
+.datasheets {
+	i {
+		font-size: 5em;
+		display: inline-block;
+		float:left;
+		margin-right: 1rem;
+	}
+}
+
 /* - - - - - - - - - - - - - - - - - - - - */
 
 /*==========  CubePro Page  ==========*/
 
 .cubepro {
-	margin-top: -5.5em;
+	background:$gray-base;
+	margin-top: -5em;
+	padding:2em 0;
+
+	.video-js  {
+		padding-top: 56.25%;
+	}
+
+}
+
+/*==========  HP Microsite Pages  ==========*/
+
+.microsite-well {
+	margin-top: 2em;
+	// background:$gray-darker;
+}
+
+.microsite-header {
+	max-height:500px;
+	overflow:hidden;
+	img {
+		transform: translateY(-10%);
+		min-width: 100%;
+	}
+}
+
+#menu-hpproducts {
+	width:100%;
+	padding:0;
+	margin:0;
+
+	li {
+		margin-top:2em;
+		display: inline-block;
+		&:before {
+			content:'';
+		}
+	}
+
+	a {
+		border-radius:0.8em;
+		text-transform: uppercase;
+		color:$gray-base;
+		background:$info;
+		padding:1em;
+		font-weight: 400;
+
+		&:hover {
+			background:$info - 20;
+			text-decoration: none;
+		}
+	}
 }
 
 

@@ -8,7 +8,7 @@
 			<div class="page-header"><h1><?php echo roots_title(); ?></h1></div>
 		</div>
 		<div class="col-sm-12">
-			<?php the_breadcrumb(); ?>
+			<ol class="breadcrumb"><?php breadcrumb_trail(); ?></ol>
 		</div>
 	</div>
 </div>

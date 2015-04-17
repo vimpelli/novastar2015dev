@@ -41,7 +41,14 @@
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
+// used to bring fullscreen header hero images up
+.wrapper-negative {
+	margin-top: -4em;
 
+	.header-hero {
+		margin-top:0;
+	}
+}
 
 div.mod-time {
 	background:red;
@@ -171,6 +178,11 @@ form.search-form {
 ---------------------------------------- */
 small {
 	font-family: Lato, sans-serif;
+}
+
+.bold {
+	font-weight: 400;
+	font-family: Lato;
 }
 
 p {

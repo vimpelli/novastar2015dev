@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container wrapper-negative">
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="header-hero">
@@ -9,9 +9,11 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<?php the_breadcrumb(); ?>
+			<ol class="breadcrumb"><?php breadcrumb_trail(); ?></ol>
 		</div>
 	</div>
 </div>

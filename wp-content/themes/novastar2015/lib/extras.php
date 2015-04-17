@@ -95,59 +95,32 @@ function imgswap($id, $size) {
 	}
 	
 }
-
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 // Provides an easier way to get the uploads directory
 function uploads_dir() {
 	echo esc_url(home_url()) . "/wp-content/uploads/";
 }
 
-// Create function to render breadcrumbs
-function the_breadcrumb() {
-    global $post;
-    echo '<ol class="breadcrumb">';
-    if (!is_home()) {
-        echo '<li><a href="';
-        echo get_option('home');
-        echo '">';
-        echo 'Home';
-        echo '</a></li>';
-        if (is_category() || is_single()) {
-            echo '<li>';
-            the_category('</li><li> ');
-            if (is_single()) {
-                echo '</li><li>';
-                the_title();
-                echo '</li>';
-            }
-        } elseif (is_page()) {
-            if($post->post_parent){
-                $anc = get_post_ancestors( $post->ID );
-                $title = get_the_title();
-                foreach ( $anc as $ancestor ) {
-                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a> /</li>';
-                }
-                echo $output;
-                echo '<strong title="'.$title.'"> '.$title.'</strong>';
-            } else {
-                echo '<li><strong>'.get_the_title().'</strong></li>';
-            }
-        }
-    }
-    elseif (is_tag()) {single_tag_title();}
-    elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}
-    elseif (is_month()) {echo"<li>Archive for "; the_time('F, Y'); echo'</li>';}
-    elseif (is_year()) {echo"<li>Archive for "; the_time('Y'); echo'</li>';}
-    elseif (is_author()) {echo"<li>Author Archive"; echo'</li>';}
-    elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<li>Blog Archives"; echo'</li>';}
-    elseif (is_search()) {echo"<li>Search Results"; echo'</li>';}
-    echo '</ol>';
-}
 
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*==========  Load breadcrumbs plugin  ==========*/
+
+if ( !function_exists( 'breadcrumb_trail' ) )
+require_once( 'breadcrumbs.php' );
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*==========  Register my menus  ==========*/
 function register_my_menu() {
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*==========  Functions to get next and previous post urls ==========*/
 
 function next_post_url() {
@@ -164,8 +137,9 @@ function prev_post_url() {
 
     echo $npl_url; 
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*==========  Theme Options  ==========*/
 
-//Custom Theme Settings
 add_action('admin_menu', 'add_glo_interface');
 
 function add_glo_interface() {
@@ -207,28 +181,32 @@ function simplesearchform($classes) {
     <?php
 }
 
-function parentbutton() { /*==========  GET PARENT PAGE BUTTON  ==========*/
 
-    /* get id of current page */
-    $pageid = get_the_id();
+/*==========  GET PARENT PAGE BUTTON  ==========*/
+function parentbutton() { 
 
-    /* get id of parent page */
-    $parent = get_post_ancestors( $post->ID );
+    $parent = get_post_ancestors($post);
 
-    $id = ($parent) ? $parent[count($parent)-1]: $post->ID;
+    $parent_id = $parent[0];
 
-    /* set variable for link to parent page */
-    $permalink = get_permalink($id);
+    $title = get_the_title($parent_id);
 
-    /* set variable for title of parent page */
-    $title = get_the_title($id);
+    $permalink = get_permalink($parent_id);
 
-    /* if the two id variables are not equal, display button to parent page */
-    if ($id != $pageid) {
-
-        $parentbutton = '<br><a type="button" class="btn btn-default btn-block btn-md" href="' .$permalink. '">Back to ' .$title. '</a><br>';
-
-    } 
+    $parentbutton = '<br><a type="button" class="btn btn-default btn-block btn-md" href="' .$permalink. '">Back to ' .$title. '</a><br>';
 
     echo $parentbutton;
+}
+/*==========  Get attachement meta  ==========*/
+function wp_get_attachment( $attachment_id ) {
+
+    $attachment = get_post( $attachment_id );
+    return array(
+        'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
+        'caption' => $attachment->post_excerpt,
+        'description' => $attachment->post_content,
+        'href' => get_permalink( $attachment->ID ),
+        'src' => $attachment->guid,
+        'title' => $attachment->post_title
+    );
 }
