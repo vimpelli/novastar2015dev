@@ -13,7 +13,9 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<ol class="breadcrumb"><?php breadcrumb_trail(); ?></ol>
+			<?php if(!is_page('about')): ?>
+				<ol class="breadcrumb"><?php breadcrumb_trail(); ?></ol>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
