@@ -96,10 +96,13 @@
 /*==========  Dassault Page  ==========*/
 
 .dassault {
+	$catia:rgba(37,34,122,1);
+	$simulia:rgba(0,172,170,1);
+
 	.catia {
 		h2 {
 			color:white;
-			background:rgba(37,34,122,1);
+			background:$catia;
 		}
 
 		div.logo {
@@ -107,16 +110,21 @@
 		}
 	}
 	.simulia {
+		@media (max-width:$screen-sm) {
+			padding-top: 5em;
+			border-top: 2px solid $gray-light;
+		}
+
 		h2 {
 			color:white;
-			background:rgba(0,172,170,1);
+			background:$simulia;
 		}
 		div.logo {
 			@extend h2;
 		}
 	}
 
-	div.logo { /* vince */
+	div.logo {
 		position: relative;
 		padding:0.5em;
 		width:100%;
@@ -169,8 +177,11 @@
 		text-align: center;
 
 		.software-logo {
-			height:10em;
 			position: relative;
+
+			@media (min-width:$screen-sm) {
+				height:10em;
+			}
 
 			a {	
 				z-index: 1;
@@ -190,8 +201,12 @@
 				padding:0 25%;
 
 				@media (max-width:$screen-sm) {
+					top:0;
+					left:0;
+					transform: none;
 					position: relative;
-					padding: 30%;
+					padding:5% 0;
+					max-width: 250px; 
 				}
 			}
 		}

@@ -33,6 +33,9 @@ Template Name: Dassault Page
 	<div class="row section divider">
 		<div class="col-md-6">
 			<div class="catia">
+				<div class="embed-responsive embed-responsive-16by9">
+  					<iframe class="embed-responsive-item" src="<?php the_field('s1_video'); ?>"></iframe>
+				</div>
 				<div class="logo">
 					<img class="img logo" src="<?php the_field('s1_logo'); ?>">
 					<img class="img partner" src="<?php the_field('s1_logo_2'); ?>">
@@ -47,6 +50,9 @@ Template Name: Dassault Page
 	
 		<div class="col-md-6">
 			<div class="simulia">
+				<div class="embed-responsive embed-responsive-16by9">
+  					<iframe class="embed-responsive-item" src="<?php the_field('s2_video'); ?>"></iframe>
+				</div>
 				<div class="logo">
 					<img class="img logo" src="<?php the_field('s2_logo'); ?>">
 					<img class="img partner" src="<?php the_field('s2_logo_2'); ?>">
@@ -62,6 +68,7 @@ Template Name: Dassault Page
 
 	<div class="row section well page-bottom">
 		<div class="col-sm-12">
+
 			<h4 class="lead"><?php the_field('page_callout'); ?></h4>
 		</div>
 		<div class="col-sm-4 software-logo">

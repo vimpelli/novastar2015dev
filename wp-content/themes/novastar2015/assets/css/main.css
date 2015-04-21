@@ -6873,11 +6873,14 @@ li.well {
 .dassault .catia h2, .dassault .catia div.logo {
   color: white;
   background: #25227a; }
+@media (max-width: 768px) {
+  .dassault .simulia {
+    padding-top: 5em;
+    border-top: 2px solid #b0b0b0; } }
 .dassault .simulia h2, .dassault .simulia div.logo {
   color: white;
   background: #00acaa; }
 .dassault div.logo {
-  /* vince */
   position: relative;
   padding: 0.5em;
   width: 100%;
@@ -6910,8 +6913,10 @@ li.well {
 .dassault .page-bottom {
   text-align: center; }
   .dassault .page-bottom .software-logo {
-    height: 10em;
     position: relative; }
+    @media (min-width: 768px) {
+      .dassault .page-bottom .software-logo {
+        height: 10em; } }
     .dassault .page-bottom .software-logo a {
       z-index: 1;
       position: absolute;
@@ -6930,8 +6935,14 @@ li.well {
       padding: 0 25%; }
       @media (max-width: 768px) {
         .dassault .page-bottom .software-logo img {
+          top: 0;
+          left: 0;
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none;
           position: relative;
-          padding: 30%; } }
+          padding: 5% 0;
+          max-width: 250px; } }
 
 /*==========  REMARKETING PAGE  ==========*/
 @media (max-width: 768px) {
