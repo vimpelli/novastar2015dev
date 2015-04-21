@@ -5,7 +5,7 @@
 	<div class="row section">
 		<div class="col-sm-12">
 			<h2><?php the_field('intro_heading'); ?></h2>
-			<?php the_field('section_2'); ?>
+			<?php the_field('intro_body'); ?>
 		</div>
 		<div class="col-md-8">
 			<img src="<?php the_field('logo'); ?>" class="img-responsive" alt="Image">

@@ -6948,6 +6948,8 @@ li.well {
 @media (max-width: 768px) {
   .remarketing .logo {
     margin-top: 2em; } }
+.remarketing .logo-row .logo img {
+  max-width: 250px; }
 .remarketing .testimonial {
   position: relative;
   overflow: hidden;

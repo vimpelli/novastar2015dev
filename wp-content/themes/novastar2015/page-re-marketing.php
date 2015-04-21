@@ -19,16 +19,28 @@
 
 	<div class="row logo-row section divider">
 		<div class="col-xs-6 col-sm-3 logo">
-			<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
+			<?php if(get_field('logo_link_1')): ?>
+			<a target=_blank href="<?php the_field('logo_link_1'); ?>"><?php endif; ?>
+				<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
+			</a>
 		</div>
 		<div class="col-xs-6 col-sm-3 logo">
+			<?php if(get_field('logo_link_2')): ?>
+			<a target=_blank href="<?php the_field('logo_link_2'); ?>"><?php endif; ?>
 			<img class="img-responsive" src="<?php the_field('logo_2'); ?>">
+			</a>
 		</div>
 		<div class="col-xs-6 col-sm-3 logo">
+			<?php if(get_field('logo_link_3')): ?>
+			<a target=_blank href="<?php the_field('logo_link_3'); ?>"><?php endif; ?>
 			<img class="img-responsive" src="<?php the_field('logo_3'); ?>">
+			</a>
 		</div>
 		<div class="col-xs-6 col-sm-3 logo">
+			<?php if(get_field('logo_link_4')): ?>
+			<a target=_blank href="<?php the_field('logo_link_4'); ?>"><?php endif; ?>
 			<img class="img-responsive" src="<?php the_field('logo_4'); ?>">
+			</a>
 		</div>
 	</div>
 

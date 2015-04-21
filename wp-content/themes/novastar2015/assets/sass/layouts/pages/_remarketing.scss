@@ -5,6 +5,15 @@
       margin-top: 2em;
     }
   }
+  .logo-row {
+  .logo {
+
+    img {
+      max-width: 250px; 
+      // max-height:120px;
+    }
+  }
+}
 
   .testimonial {
     position: relative;
@@ -27,6 +36,7 @@
         opacity: 0.2;
       }
     }
+
     &:nth-child(2n+0) {
       &:before {
         position: absolute;
