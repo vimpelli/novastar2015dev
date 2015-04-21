@@ -1,0 +1,4 @@
+0000.000 (1) Opened log file at time: Tue, 21 Apr 2015 16:17:15 +0000 on http://novastar.dev
+0000.000 (1) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.64 WP: 4.1.2 PHP: 5.4.19 (Darwin Vinces-Mac-Pro-2.local 13.4.0 Darwin Kernel Version 13.4.0: Wed Mar 18 16:20:14 PDT 2015; root:xnu-2422.115.14~1/RELEASE_X86_64 x86_64) MySQL: 5.1.44 Server: Apache/2.4.4 (Unix) PHP/5.4.19 OpenSSL/1.0.1e mod_perl/2.0.8-dev Perl/v5.16.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 20.4M | 21M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 56011.6 Mb
+0000.001 (1) This backup task is either complete or began over 2 days ago: ending (1429633035.8611, )
