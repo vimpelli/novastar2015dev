@@ -91,3 +91,120 @@
 	border-left: 0.1em solid $gray-lighter - 40;
 	border-bottom: 0.1em solid $gray-lighter - 40;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*==========  Dassault Page  ==========*/
+
+.dassault {
+	.catia {
+		h2 {
+			color:white;
+			background:rgba(37,34,122,1);
+		}
+
+		div.logo {
+			@extend h2;
+		}
+	}
+	.simulia {
+		h2 {
+			color:white;
+			background:rgba(0,172,170,1);
+		}
+		div.logo {
+			@extend h2;
+		}
+	}
+
+	div.logo { /* vince */
+		position: relative;
+		padding:0.5em;
+		width:100%;
+		margin:0 !important;
+		margin-bottom: 1em !important;
+
+		img.logo {
+			max-height:1.5em;
+
+			@media (max-width:$screen-sm) {
+				max-height:1.2em;
+			}
+		}
+
+		img.partner {
+			position: absolute;
+			top:0;
+			right:0;
+			max-width: 5em;
+
+			@media (max-width:$screen-sm) {
+				max-width: 4em;
+			}
+		}
+	}
+
+	span.spacer {
+		float:right;
+		display: block;
+		height:3.5em;
+		width:12em;
+	}
+	
+	span.callout {
+		ul {
+			li {
+				margin-bottom: 1em;
+
+				&:before {
+					display: none;
+				}
+			}
+			strong {
+				display: block;
+			}
+		}
+	}
+
+	.page-bottom {
+		text-align: center;
+
+		.software-logo {
+			height:10em;
+			position: relative;
+
+			a {	
+				z-index: 1;
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
+
+			img {
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%, -50%);
+				width:100%;
+				padding:0 25%;
+
+				@media (max-width:$screen-sm) {
+					position: relative;
+					padding: 30%;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

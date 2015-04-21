@@ -109,6 +109,9 @@ function uploads_dir() {
 if ( !function_exists( 'breadcrumb_trail' ) )
 require_once( 'breadcrumbs.php' );
 
+function the_breadcrumb() {
+    breadcrumb_trail();
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*==========  Register my menus  ==========*/

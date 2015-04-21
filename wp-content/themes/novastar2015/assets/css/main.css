@@ -224,11 +224,13 @@ th {
 
   p,
   h2,
+  .dassault .catia div.logo,
+  .dassault .simulia div.logo,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  h2,
+  h2, .dassault .catia div.logo, .dassault .simulia div.logo,
   h3 {
     page-break-after: avoid; }
 
@@ -961,15 +963,17 @@ hr {
   overflow: visible;
   clip: auto; }
 
-h1, h2, h3, h4, h5, h6,
+h1, h2, .dassault .catia div.logo, .dassault .simulia div.logo, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Roboto Slab, Lato, Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.1;
   color: #525252; }
   h1 small,
-  h1 .small, h2 small,
-  h2 .small, h3 small,
+  h1 .small, h2 small, .dassault .catia div.logo small, .dassault .simulia div.logo small,
+  h2 .small,
+  .dassault .catia div.logo .small,
+  .dassault .simulia div.logo .small, h3 small,
   h3 .small, h4 small,
   h4 .small, h5 small,
   h5 .small, h6 small,
@@ -986,7 +990,9 @@ h1, h2, h3, h4, h5, h6,
     color: #b0b0b0; }
 
 h1, .h1,
-h2, .h2,
+h2,
+.dassault .catia div.logo,
+.dassault .simulia div.logo, .h2,
 h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px; }
@@ -994,7 +1000,11 @@ h3, .h3 {
   h1 .small, .h1 small,
   .h1 .small,
   h2 small,
-  h2 .small, .h2 small,
+  .dassault .catia div.logo small,
+  .dassault .simulia div.logo small,
+  h2 .small,
+  .dassault .catia div.logo .small,
+  .dassault .simulia div.logo .small, .h2 small,
   .h2 .small,
   h3 small,
   h3 .small, .h3 small,
@@ -1020,7 +1030,7 @@ h6, .h6 {
 h1, .h1 {
   font-size: 36px; }
 
-h2, .h2 {
+h2, .dassault .catia div.logo, .dassault .simulia div.logo, .h2 {
   font-size: 30px; }
 
 h3, .h3 {
@@ -4860,6 +4870,12 @@ button.close {
   .wrapper-negative .header-hero {
     margin-top: 0; }
 
+.wide-header {
+  max-height: 500px;
+  overflow: hidden; }
+  .wide-header img {
+    min-width: 100%; }
+
 div.mod-time {
   background: red;
   padding: 0.5em;
@@ -4913,11 +4929,6 @@ table.table {
 .breadcrumb {
   margin-bottom: 4em; }
 
-.filler {
-  width: 100%;
-  height: 100%;
-  background: red; }
-
 .btn {
   text-transform: uppercase;
   letter-spacing: 0.05em; }
@@ -4958,7 +4969,7 @@ p {
 h1 {
   font-size: 2.8em; }
 
-h2 {
+h2, .dassault .catia div.logo, .dassault .simulia div.logo {
   font-size: 2.3em; }
 
 h3 {
@@ -6368,13 +6379,13 @@ li.well {
   height: 100%; }
 .home-hero figcaption {
   padding: 0 1em 1em 1em; }
-  .home-hero figcaption h2 {
+  .home-hero figcaption h2, .home-hero figcaption .dassault .catia div.logo, .dassault .catia .home-hero figcaption div.logo, .home-hero figcaption .dassault .simulia div.logo, .dassault .simulia .home-hero figcaption div.logo {
     padding-bottom: 0.3rem;
     padding-left: 1rem;
     margin-left: -1rem;
     color: #243772;
     border-bottom: 1px solid #b0b0b0; }
-    .home-hero figcaption h2:before {
+    .home-hero figcaption h2:before, .home-hero figcaption .dassault .catia div.logo:before, .dassault .catia .home-hero figcaption div.logo:before, .home-hero figcaption .dassault .simulia div.logo:before, .dassault .simulia .home-hero figcaption div.logo:before {
       content: '';
       margin-right: 0.5rem;
       padding-bottom: 1rem;
@@ -6568,7 +6579,7 @@ li.well {
 /* HOME PAGE MEDIA QUERIES
 ---------------------------------------- */
 @media (max-width: 1340px) {
-  figure.service h2 {
+  figure.service h2, figure.service .dassault .catia div.logo, .dassault .catia figure.service div.logo, figure.service .dassault .simulia div.logo, .dassault .simulia figure.service div.logo {
     font-size: 1.8em; } }
 /* CALIBRATION PAGE
 ------------------------- */
@@ -6590,7 +6601,6 @@ li.well {
     .new-hardware article .img-container img {
       position: absolute;
       max-width: 13.92em;
-      max-height: 9.6em;
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -6686,11 +6696,12 @@ li.well {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
 
-.datasheets i {
-  font-size: 5em;
-  display: inline-block;
-  float: left;
-  margin-right: 1rem; }
+.datasheets .sheet {
+  position: relative; }
+  .datasheets .sheet p {
+    margin-left: 0.5em;
+    border-bottom: 0.1em solid #ecb31b;
+    font-weight: 400; }
 
 /* - - - - - - - - - - - - - - - - - - - - */
 /*==========  CubePro Page  ==========*/
@@ -6856,6 +6867,71 @@ li.well {
   border-radius: 0.3em;
   border-left: 0.1em solid #bbbbbb;
   border-bottom: 0.1em solid #bbbbbb; }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*==========  Dassault Page  ==========*/
+.dassault .catia h2, .dassault .catia div.logo {
+  color: white;
+  background: #25227a; }
+.dassault .simulia h2, .dassault .simulia div.logo {
+  color: white;
+  background: #00acaa; }
+.dassault div.logo {
+  /* vince */
+  position: relative;
+  padding: 0.5em;
+  width: 100%;
+  margin: 0 !important;
+  margin-bottom: 1em !important; }
+  .dassault div.logo img.logo {
+    max-height: 1.5em; }
+    @media (max-width: 768px) {
+      .dassault div.logo img.logo {
+        max-height: 1.2em; } }
+  .dassault div.logo img.partner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 5em; }
+    @media (max-width: 768px) {
+      .dassault div.logo img.partner {
+        max-width: 4em; } }
+.dassault span.spacer {
+  float: right;
+  display: block;
+  height: 3.5em;
+  width: 12em; }
+.dassault span.callout ul li {
+  margin-bottom: 1em; }
+  .dassault span.callout ul li:before {
+    display: none; }
+.dassault span.callout ul strong {
+  display: block; }
+.dassault .page-bottom {
+  text-align: center; }
+  .dassault .page-bottom .software-logo {
+    height: 10em;
+    position: relative; }
+    .dassault .page-bottom .software-logo a {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .dassault .page-bottom .software-logo img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 25%; }
+      @media (max-width: 768px) {
+        .dassault .page-bottom .software-logo img {
+          position: relative;
+          padding: 30%; } }
 
 /*==========  REMARKETING PAGE  ==========*/
 @media (max-width: 768px) {

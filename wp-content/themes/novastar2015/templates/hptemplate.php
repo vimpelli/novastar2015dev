@@ -78,30 +78,28 @@ Template Name: HP Page Layout
 			</div>
 		</div>
 	</div>
-
-	<!-- <?php print_r( $title = wp_get_attachment(get_field('sheet_2'))); ?> -->
 	
-	<!-- <div class="row datasheets section">
+	<div class="row datasheets">
 		<div class="col-sm-12">
 			<h2>Data Sheets</h2>
 		</div>
-		<div class="col-sm-3">
-			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_1'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
-			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_1'))['title']; ?></p>
+		<div class="col-sm-6 sheet">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_1'))['src']; ?>" target=_blank>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_1'))['title']; ?></p></a>
 		</div>
-		<div class="col-sm-3">
-			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_2'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
-			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_2'))['title']; ?></p>
+		<div class="col-sm-6 sheet">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_2'))['src']; ?>" target=_blank>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_2'))['title']; ?></p></a>
 		</div>
-		<div class="col-sm-3">
-			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_3'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
-			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_3'))['title']; ?></p>
+		<div class="col-sm-6 sheet">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_3'))['src']; ?>" target=_blank>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_3'))['title']; ?></p></a>
 		</div>
-		<div class="col-sm-3">
-			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_4'))['src']; ?>" target=_blank><i class="fa fa-file-text"></i></a>
-			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_4'))['title']; ?></p>
+		<div class="col-sm-6 sheet">
+			<a href="<?php echo $title = wp_get_attachment(get_field('sheet_4'))['src']; ?>" target=_blank>
+			<p class="lead"><?php echo $title = wp_get_attachment(get_field('sheet_4'))['title']; ?></p></a>
 		</div>
-	</div> -->
+	</div>
 
 
 	<div class="row section">

@@ -23,7 +23,7 @@ $product-height:12em;
 			img {
 				position: absolute;
 				max-width: $product-height * 1.16;
-				max-height:$product-height * 0.8;
+				// max-height:$product-height * 1;
 				left:50%;
 				top:50%;
 				transform: translate(-50%,-50%);
@@ -131,6 +131,7 @@ $product-height:12em;
 			left:50%;
 			width:75%;
 			text-align: center;
+
 			z-index: 10;
 			transform: translateX(-50%);
 		}
@@ -138,11 +139,14 @@ $product-height:12em;
 }
 
 .datasheets {
-	i {
-		font-size: 5em;
-		display: inline-block;
-		float:left;
-		margin-right: 1rem;
+	.sheet {
+		position: relative;
+
+		p {
+			margin-left: 0.5em;
+			border-bottom: 0.1em solid $info;
+			font-weight: 400;
+		}
 	}
 }
 
