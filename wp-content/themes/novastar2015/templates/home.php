@@ -84,22 +84,22 @@ Template Name: Home Page Layout
 
 	<div class="row logo-row">
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_1'); ?>">
+			<a href="<?php the_field('logo_link_1'); ?>"><img class="img-responsive" src="<?php the_field('logo_1'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_2'); ?>">
+			<a href="<?php the_field('logo_link_2'); ?>"><img class="img-responsive" src="<?php the_field('logo_2'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_3'); ?>">
+			<a href="<?php the_field('logo_link_3'); ?>"><img class="img-responsive" src="<?php the_field('logo_3'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_4'); ?>">
+			<a href="<?php the_field('logo_link_4'); ?>"><img class="img-responsive" src="<?php the_field('logo_4'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_5'); ?>">
+			<a href="<?php the_field('logo_link_5'); ?>"><img class="img-responsive" src="<?php the_field('logo_5'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
-			<img class="img-responsive" src="<?php the_field('logo_6'); ?>">
+			<a href="<?php the_field('logo_link_6'); ?>"><img class="img-responsive" src="<?php the_field('logo_6'); ?>"></a>
 		</div>
 	</div>
 
