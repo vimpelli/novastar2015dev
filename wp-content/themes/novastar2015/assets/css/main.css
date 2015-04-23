@@ -5166,7 +5166,7 @@ header.navbar {
       box-sizing: border-box;
       line-height: 4.5em;
       /* Set sizes for different numbers of menu items */ }
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         .main-nav ul.nav > li.six {
           width: 15.6666666667%; }
         .main-nav ul.nav > li.five {
@@ -7142,7 +7142,7 @@ li.well {
       .the-post time.updated {
         display: block; } }
   .the-post .entry-summary {
-    padding: 0 1em 1em 1em; }
+    padding: 1em; }
 
 .archive-sidebar .widget li {
   list-style-type: none; }

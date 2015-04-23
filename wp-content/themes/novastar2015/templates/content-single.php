@@ -12,7 +12,7 @@
               echo '</div>'; } ?>
 
           <header>
-            <?php the_breadcrumb(); ?>
+            <ol class="breadcrumb"><?php the_breadcrumb(); ?></ol>
             <h1 class="entry-title page-header"><?php the_title(); ?><small><time class="updated" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time></small></h1>          
           </header>
     </div>

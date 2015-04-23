@@ -144,7 +144,7 @@ header.navbar {
 			line-height: $nav-height;
 			
 			/* Set sizes for different numbers of menu items */
-			@media (min-width:$screen-sm) {
+			@media (min-width:$screen-sm + 1) {
 				
 				&.six {
 					width:(100%/6)- 1;
