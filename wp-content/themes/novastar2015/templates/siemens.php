@@ -36,10 +36,14 @@ Template Name: Siemens Page
 				<div class="embed-responsive embed-responsive-16by9">
   					<iframe class="embed-responsive-item" src="<?php the_field('s1_video'); ?>"></iframe>
 				</div>
-				<div class="logo">
-					<img class="img logo" src="<?php the_field('s1_logo'); ?>">
-					<img class="img partner" src="<?php the_field('s1_logo_2'); ?>">
-				</div>
+
+				<?php if(get_field('s1_logo')): ?>
+					<div class="logo">
+						<img class="img logo" src="<?php the_field('s1_logo'); ?>">
+						<img class="img partner" src="<?php the_field('s1_logo_2'); ?>">
+					</div>
+				<?php endif; ?>
+
 				<span class="spacer"></span>
 				<?php the_field('s1_body'); ?>
 				<span class="callout">
@@ -54,10 +58,14 @@ Template Name: Siemens Page
 				<div class="embed-responsive embed-responsive-16by9">
   					<iframe class="embed-responsive-item" src="<?php the_field('s2_video'); ?>"></iframe>
 				</div>
-				<div class="logo">
-					<img class="img logo" src="<?php the_field('s2_logo'); ?>">
-					<img class="img partner" src="<?php the_field('s2_logo_2'); ?>">
-				</div>
+
+				<?php if(get_field('s1_logo')): ?>
+					<div class="logo">
+						<img class="img logo" src="<?php the_field('s2_logo'); ?>">
+						<img class="img partner" src="<?php the_field('s2_logo_2'); ?>">
+					</div>
+				<?php endif; ?>
+
 				<span class="spacer"></span>
 				<?php the_field('s2_body'); ?>
 				<span class="callout">
