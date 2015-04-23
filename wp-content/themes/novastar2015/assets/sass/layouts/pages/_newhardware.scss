@@ -170,15 +170,27 @@ $product-height:11em;
 
 .microsite-well {
 	margin-top: 2em;
-	// background:$gray-darker;
 }
 
 .serverhero {
-
 	img {
 		width:100%;
 		padding-top: 5%;
 		margin:0 auto;
+	}
+}
+
+.centered-header {
+	overflow:hidden;
+	height:0;
+	padding-top: 35%;
+
+	img {
+		position: absolute;
+		padding:0 1em;
+		top:50%;
+		left:0;
+		transform: translateY(-50%);
 	}
 }
 
@@ -246,7 +258,9 @@ $product-height:11em;
 		}
 	}
 }
+/* - - - - - - - - - - - - - - - - - - - - */
 
+/*==========  CISCO Page  ==========*/
 
 
 

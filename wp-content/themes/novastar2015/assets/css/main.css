@@ -6324,7 +6324,7 @@ li.well {
   overflow: hidden;
   margin-top: 2em;
   background: #e3e3e3;
-  background-image: url(/wp-content/themes/novastar2015/assets/img/grid.png);
+  background-image: url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/grid.png);
   border-top: 0.4em solid #89A4D4;
   border-bottom: 0.8em solid #6b86b6;
   height: 25em; }
@@ -6734,6 +6734,19 @@ li.well {
   padding-top: 5%;
   margin: 0 auto; }
 
+.centered-header {
+  overflow: hidden;
+  height: 0;
+  padding-top: 35%; }
+  .centered-header img {
+    position: absolute;
+    padding: 0 1em;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
 .microsite-header {
   max-height: 500px;
   overflow: hidden; }
@@ -6783,6 +6796,8 @@ li.well {
           border-bottom: 0;
           text-decoration: none; }
 
+/* - - - - - - - - - - - - - - - - - - - - */
+/*==========  CISCO Page  ==========*/
 /*==========  IT SERVICES PAGE  ==========*/
 .itservices .section div.info {
   background: #e3e3e3;
@@ -6987,9 +7002,8 @@ li.well {
   .remarketing .logo {
     margin-top: 2em; } }
 .remarketing .logo-row .logo img {
-  max-width: 250px;
-  padding: 1em;
-  max-height: 120px; }
+  max-width: 100%;
+  max-height: 100%; }
 .remarketing .testimonial {
   position: relative;
   overflow: hidden;
