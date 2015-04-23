@@ -102,7 +102,8 @@ a {
 	color:$primary;
 
 	&:hover {
-		color:$primary + 50;
+		// color:$primary + 50;
+		color:$info;
 		text-decoration:none;
 	}
 }
@@ -151,7 +152,10 @@ table.table {
 	text-transform:uppercase;
 	letter-spacing: 0.05em;
 }
-
+.btn-sq {
+	border-radius:0;
+	border:0;
+}
 /*==========  SEARCH FORM  ==========*/
 
 form.search-form {

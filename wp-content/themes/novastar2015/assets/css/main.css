@@ -4903,7 +4903,7 @@ img {
 a {
   color: #89A4D4; }
   a:hover {
-    color: #bbd6ff;
+    color: #ecb31b;
     text-decoration: none; }
 
 .aligncenter {
@@ -4939,6 +4939,10 @@ table.table {
 .btn {
   text-transform: uppercase;
   letter-spacing: 0.05em; }
+
+.btn-sq {
+  border-radius: 0;
+  border: 0; }
 
 /*==========  SEARCH FORM  ==========*/
 form.search-form {
@@ -6725,6 +6729,11 @@ li.well {
 .microsite-well {
   margin-top: 2em; }
 
+.serverhero img {
+  width: 100%;
+  padding-top: 5%;
+  margin: 0 auto; }
+
 .microsite-header {
   max-height: 500px;
   overflow: hidden; }
@@ -6734,25 +6743,45 @@ li.well {
             transform: translateY(-10%);
     min-width: 100%; }
 
-#menu-hpproducts {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-  #menu-hpproducts li {
-    margin-top: 2em;
-    display: inline-block; }
-    #menu-hpproducts li:before {
-      content: ''; }
-  #menu-hpproducts a {
-    border-radius: 0.8em;
-    text-transform: uppercase;
-    color: #303030;
-    background: #ecb31b;
-    padding: 1em;
-    font-weight: 400; }
-    #menu-hpproducts a:hover {
-      background: #d89f07;
-      text-decoration: none; }
+.menu-hpproducts-wrapper {
+  margin-top: 1em;
+  border-bottom: 2px solid #b0b0b0;
+  border-top: 2px solid #b0b0b0; }
+  .menu-hpproducts-wrapper #menu-hpproducts {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline; }
+    .menu-hpproducts-wrapper #menu-hpproducts li {
+      position: relative;
+      display: inline-block;
+      padding: 1em 0;
+      margin: 0; }
+      .menu-hpproducts-wrapper #menu-hpproducts li:before {
+        content: ''; }
+    .menu-hpproducts-wrapper #menu-hpproducts a {
+      margin: 0;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: 1em; }
+      .menu-hpproducts-wrapper #menu-hpproducts a:hover {
+        -webkit-transition: 0.2s all;
+                transition: 0.2s all;
+        border-bottom: 4px solid #ecb31b;
+        text-decoration: none; }
+    .menu-hpproducts-wrapper #menu-hpproducts li.menu-contact {
+      background: #67CF67; }
+      .menu-hpproducts-wrapper #menu-hpproducts li.menu-contact a {
+        -webkit-transition: 0.2s all;
+                transition: 0.2s all;
+        color: white; }
+        .menu-hpproducts-wrapper #menu-hpproducts li.menu-contact a:hover {
+          -webkit-transition: 0.2s all;
+                  transition: 0.2s all;
+          background: #7be37b;
+          border-bottom: 0;
+          text-decoration: none; }
 
 /*==========  IT SERVICES PAGE  ==========*/
 .itservices .section div.info {

@@ -173,6 +173,15 @@ $product-height:11em;
 	// background:$gray-darker;
 }
 
+.serverhero {
+
+	img {
+		width:100%;
+		padding-top: 5%;
+		margin:0 auto;
+	}
+}
+
 .microsite-header {
 	max-height:500px;
 	overflow:hidden;
@@ -182,34 +191,61 @@ $product-height:11em;
 	}
 }
 
-#menu-hpproducts {
-	width:100%;
-	padding:0;
-	margin:0;
+.menu-hpproducts-wrapper {
+	margin-top: 1em;
+	border-bottom:2px solid $gray-light;
+	border-top:2px solid $gray-light;
 
-	li {
-		margin-top:2em;
-		display: inline-block;
-		&:before {
-			content:'';
+
+	#menu-hpproducts {
+		width:100%;
+		padding:0;
+		margin:0;
+		display: inline;
+
+		li {
+			position: relative;
+			display: inline-block;
+			padding:1em 0;
+			margin:0;
+
+			
+			&:before {
+				content:'';
+			}
 		}
-	}
 
-	a {
-		border-radius:0.8em;
-		text-transform: uppercase;
-		color:$gray-base;
-		background:$info;
-		padding:1em;
-		font-weight: 400;
+		a {
+			margin:0;
+			position: relative;
+			text-transform: uppercase;
+			font-weight: 400;
+			padding:1em;
 
-		&:hover {
-			background:$info - 20;
-			text-decoration: none;
+			&:hover {
+				transition: 0.2s all;
+				border-bottom: 4px solid $info;
+				text-decoration: none;
+			}
+		}
+
+		li.menu-contact {
+			background:$green;
+
+			a {
+				transition: 0.2s all;
+				color:white;
+
+				&:hover {
+					transition: 0.2s all;
+					background:$green +20;
+					border-bottom: 0;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
-
 
 
 

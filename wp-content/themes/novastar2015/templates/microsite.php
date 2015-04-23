@@ -17,12 +17,10 @@ Template Name: Microsite Page Layout
 </div>
 <?php endif; ?>	
 
-<div class="container">
-	<div class="row section">
-		<div class="col-sm-12">
+<div class="menu-hpproducts-wrapper">
+	<div class="container">
 			<?php wp_nav_menu( array('menu' => 'hpproducts' )); ?>
-		</div><!-- /.col-sm-12 -->
-	</div>
+	</div><!-- /.container -->
 </div>
 
 
