@@ -6601,18 +6601,20 @@ li.well {
   border-radius: 1em;
   border-bottom: 1em solid #89A4D4;
   background: #e3e3e3;
-  padding: 2em; }
+  padding: 2em;
+  padding-top: 0; }
   .new-hardware article .img-container {
     position: relative;
-    height: 12em; }
+    height: 12.1em; }
     .new-hardware article .img-container img {
       position: absolute;
-      max-width: 13.92em;
+      max-width: 11em;
       left: 50%;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+              transform: translate(-50%, -50%);
+      padding: 0.5em; }
   .new-hardware article .product-title {
     font-size: 1.2em;
     position: relative;
@@ -6633,7 +6635,7 @@ li.well {
               transform: rotate(45deg); }
   @media (min-width: 768px) {
     .new-hardware article .product-description {
-      height: 12em; } }
+      height: 11em; } }
 
 /* - - - - - - - - - - - - - - - - - - - - */
 /*==========  HP Page  ==========*/
@@ -6956,7 +6958,9 @@ li.well {
   .remarketing .logo {
     margin-top: 2em; } }
 .remarketing .logo-row .logo img {
-  max-width: 250px; }
+  max-width: 250px;
+  padding: 1em;
+  max-height: 120px; }
 .remarketing .testimonial {
   position: relative;
   overflow: hidden;
