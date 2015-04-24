@@ -140,6 +140,7 @@ function prev_post_url() {
 
     echo $npl_url; 
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*==========  Theme Options  ==========*/
 
@@ -175,9 +176,9 @@ function editglobaloptions() {
     <?php
 }
 
-function simplesearchform($classes) {
+function simplesearchform($classes) { 
     ?>
-    <form class="input-group <?php echo $classes ?>" role="search" method="get" class="search-form form-inline" action="http://novastar.dev/">
+    <form class="input-group <?php echo $classes ?>" role="search" method="get" class="search-form form-inline" action="<?php echo site_url(); ?>">
         <input type="search" value="<?php echo get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>" required>
         <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
     </form>
