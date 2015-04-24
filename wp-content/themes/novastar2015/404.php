@@ -11,14 +11,14 @@
 				<h4>You can try searching...</h4>
 					<?php get_search_form(); ?>
 	
-				<h4>...or contact us.</h4>
+				<h4>...contact us...</h4>
 				<a href="/contact" class="btn btn-info btn-md btn-block">Contact</a>
 			</div>
 		</div>
 
 		<div class="col-sm-6">
 			<div class="well">
-				<h4>...browse all the pages...</h4>
+				<h4>...or browse all the pages.</h4>
 				<?php wp_list_pages(); ?> 
 			</div>
 		</div>
