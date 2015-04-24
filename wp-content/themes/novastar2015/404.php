@@ -1,13 +1,28 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<div class="container">
+	<div class="row section">
+		<div class="col-sm-12">
+			<div class="alert alert-warning">
+				<h1>404 Page Not Found</h1>
+			  <p class="lead"><?php _e('It looks like the page you were trying to view does not exist.', 'roots'); ?></p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="well">
+				<h4>You can try searching...</h4>
+					<?php get_search_form(); ?>
+	
+				<h4>...or contact us.</h4>
+				<a href="/contact" class="btn btn-info btn-md btn-block">Contact</a>
+			</div>
+		</div>
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
+		<div class="col-sm-6">
+			<div class="well">
+				<h4>...browse all the pages...</h4>
+				<?php wp_list_pages(); ?> 
+			</div>
+		</div>
+
+	</div>
 </div>
 
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
-
-<?php get_search_form(); ?>
