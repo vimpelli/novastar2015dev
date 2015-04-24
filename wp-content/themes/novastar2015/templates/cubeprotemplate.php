@@ -13,13 +13,13 @@ Template Name: Cube Pro Page Layout
 		<div class="col-sm-12">
 
 			<video 
-				class="video-js vjs-default-skin vjs-big-play-centered"
+				class="video"
 
 				controls preload="auto" width="auto" height="auto"
 
 				poster="http://novastar.dev/wp-content/uploads/cubeproposter.jpg"
 
-				data-setup='{"example_option":true}'>
+				>
 
 				<source src="<?php the_field('video'); ?>" type="video/mp4"/>
 

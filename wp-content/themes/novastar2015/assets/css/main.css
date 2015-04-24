@@ -6724,6 +6724,8 @@ li.well {
   padding: 2em 0; }
   .cubepro .video-js {
     padding-top: 56.25%; }
+  .cubepro .video {
+    max-width: 100%; }
 
 /*==========  HP Microsite Pages  ==========*/
 .microsite-well {
