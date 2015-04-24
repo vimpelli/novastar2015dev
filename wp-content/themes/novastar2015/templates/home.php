@@ -146,11 +146,8 @@ Template Name: Home Page Layout
 			<?php endif; ?>
 		   	
 		<?php endforeach; wp_reset_postdata(); ?>
-	  
-		<a href=".
 
-
-		/category/news/"><p class="news-more">More News</p></a>
+		<a href="<?php echo get_category_link(7); ?>"><p class="news-more">More News</p></a>
 	</div>
 
 	<div class="triangle two"></div>
