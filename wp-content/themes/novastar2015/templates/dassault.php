@@ -81,8 +81,13 @@ Template Name: Dassault Page
 			<a target=_blank href="<?php the_field('logo_3_link'); ?>"></a><img class="img" src="<?php the_field('logo_3'); ?>">
 		</div>
 	</div>
+
+
+	<div class="row section">
+		<div class="col-sm-12">
+			<?php parentbutton(); ?>
+		</div><!-- parent page button -->
+	</div>
 </div>
-
-
 <?php endwhile; ?>
 <?php endif; ?> 

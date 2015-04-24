@@ -94,6 +94,12 @@ Template Name: Siemens Page
 
 <?php endif; ?>
 
+	<div class="row section">
+		<div class="col-sm-12">
+			<?php parentbutton(); ?>
+		</div><!-- parent page button -->
+	</div>
+
 </div>
 
 
