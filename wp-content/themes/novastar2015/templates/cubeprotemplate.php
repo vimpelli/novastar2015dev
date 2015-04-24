@@ -70,7 +70,7 @@ Template Name: Cube Pro Page Layout
 
 	<div class="row section">
 		<div class="col-sm-12">
-			<a target=_blank href="<?php the_field('banner_link'); ?>"><img src="<?php the_field('banner'); ?>"></a>
+			<a href="<?php the_field('banner_link'); ?>"><img src="<?php the_field('banner'); ?>"></a>
 		</div><!-- /.col-sm-12 -->
 	</div>
 
