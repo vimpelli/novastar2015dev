@@ -6299,8 +6299,7 @@ li.well {
       .triangle.two {
         left: 15%; } }
   .triangle.three {
-    background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png);
-    background-image: url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png); }
+    background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png); }
     @media (min-width: 768px) {
       .triangle.three {
         left: 75%; } }
@@ -6324,7 +6323,7 @@ li.well {
   overflow: hidden;
   margin-top: 2em;
   background: #e3e3e3;
-  background-image: url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/grid.png);
+  background-image: url(/wp-content/themes/novastar2015/assets/img/grid.png);
   border-top: 0.4em solid #89A4D4;
   border-bottom: 0.8em solid #6b86b6;
   height: 25em; }
@@ -6488,7 +6487,7 @@ li.well {
 /*==========  VIDEO SECTION  ==========*/
 .video-wrapper {
   background: #525252;
-  background-image: url(http://192.169.219.222/~novastar//wp-content/themes/novastar2015/assets/img/pattern.png);
+  background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png);
   color: #e3e3e3; }
   @media (min-width: 768px) {
     .video-wrapper {
@@ -6644,7 +6643,7 @@ li.well {
 /* - - - - - - - - - - - - - - - - - - - - */
 /*==========  HP Page  ==========*/
 .hppage-wrapper {
-  background-image: url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png);
+  background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png);
   padding: 5em 0;
   padding-bottom: 8em;
   margin-top: 3em; }

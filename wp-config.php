@@ -32,10 +32,10 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define('DB_HOST', 'localhost');
 
 	/** Wordpress Home URl -- defined here allow immunity from database changes */
-	define('WP_HOME','http://192.169.219.222/~novastar/');
+	define('WP_HOME','https://www.novastar.net');
 	
 	/** Wordpress Site URL */
-	define('WP_SITEURL','http://192.169.219.222/~novastar/');
+	define('WP_SITEURL','https://www.novastar.net');
 }
 
 /** Database Charset to use in creating database tables. */

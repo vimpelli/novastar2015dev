@@ -41,8 +41,7 @@
     @media (min-width:$screen-sm) {
     left:75%; 
     }
-    background-image:url(#{$theme-img-root}pattern.png);
-    background-image:url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/pattern.png);
+    background-image:url(/wp-content/themes/novastar2015/assets/img/pattern.png);
   }
 
   @media (max-width:$screen-lg) {
@@ -71,7 +70,7 @@ $height: 25em;
     overflow: hidden;
     margin-top: 2em;
     background:$gray-lighter;
-    background-image: url(http://192.169.219.222/~novastar/wp-content/themes/novastar2015/assets/img/grid.png);
+    background-image: url(/wp-content/themes/novastar2015/assets/img/grid.png);
     border-top:0.4em solid $primary;
     border-bottom:0.8em solid $primary - 30;
     height:$height;
@@ -289,7 +288,7 @@ $height: 25em;
     padding-top:8em;
   }
   background:$gray-darker;
-  background-image: url(http://192.169.219.222/~novastar//wp-content/themes/novastar2015/assets/img/pattern.png);
+  background-image: url(/wp-content/themes/novastar2015/assets/img/pattern.png);
   color:$gray-lighter;
   
   .inner {
