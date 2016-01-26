@@ -83,7 +83,7 @@ Template Name: Home Page Layout
 	</div> <!-- row home hero -->
 
 	<div class="row logo-row">
-		<div class="col-xs-6 col-sm-4 col-md-2 logo">
+		<div class="col-xs-6 col-sm-4 col-md-2 col-md-offset-1 logo">
 			<a href="<?php the_field('logo_link_1'); ?>"><img class="img-responsive" src="<?php the_field('logo_1'); ?>"></a>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
@@ -92,15 +92,15 @@ Template Name: Home Page Layout
 		<div class="col-xs-6 col-sm-4 col-md-2 logo">
 			<a href="<?php the_field('logo_link_3'); ?>"><img class="img-responsive" src="<?php the_field('logo_3'); ?>"></a>
 		</div>
-		<div class="col-xs-6 col-sm-4 col-md-2 logo">
+		<div class="col-xs-6 col-sm-6 col-md-2 logo">
 			<a href="<?php the_field('logo_link_4'); ?>"><img class="img-responsive" src="<?php the_field('logo_4'); ?>"></a>
 		</div>
-		<div class="col-xs-6 col-sm-4 col-md-2 logo">
+		<div class="col-xs-12 col-sm-6 col-md-2 logo">
 			<a href="<?php the_field('logo_link_5'); ?>"><img class="img-responsive" src="<?php the_field('logo_5'); ?>"></a>
 		</div>
-		<div class="col-xs-6 col-sm-4 col-md-2 logo">
+		<!-- <div class="col-xs-6 col-sm-4 col-md-2 logo">
 			<a href="<?php the_field('logo_link_6'); ?>"><img class="img-responsive" src="<?php the_field('logo_6'); ?>"></a>
-		</div>
+		</div> -->
 	</div>
 
 	<div class="row news-hero">

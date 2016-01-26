@@ -14,9 +14,9 @@ define('DB_PASSWORD', 'root');
 define('DB_HOST', 'localhost');
 
 /** Wordpress Home URl -- defined here allow immunity from database changes */
-define('WP_HOME','http://novastar.dev/');
+define('WP_HOME','http://localhost/novastar2015dev/');
 
 /** Wordpress Site URL */
-define('WP_SITEURL','http://novastar.dev/');
+define('WP_SITEURL','http://localhost/novastar2015dev/');
 
 ?>
